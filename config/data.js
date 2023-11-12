@@ -201,7 +201,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#600"
-    category:"Groceries"
+    category:"Swallow"
    },
     
  {
@@ -209,7 +209,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#800"
-    category:"Groceries"
+    category:"Swallow"
  },
     
   {
@@ -217,7 +217,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#900"
-    category:"Groceries"
+    category:"Swallow"
   },
     
   {
@@ -225,7 +225,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#600"
-    category:"Groceries"
+    category:"Swallow"
   },
     
 {
@@ -233,7 +233,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#900"
-    category:"Groceries"
+    category:"Swallow"
 },
     
   {
@@ -241,7 +241,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#800"
-    category:"Groceries"
+    category:"Swallow"
     
   },
   {
@@ -249,7 +249,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#600"
-    category:"Groceries"
+    category:"Swallow"
     
   },
     {
@@ -257,7 +257,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#900"
-    category:"Groceries"
+    category:"Swallow"
     },
     
    {
@@ -265,7 +265,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#600"
-    category:"Categories"
+    category:"Oil"
    },
     
    {
@@ -273,7 +273,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#800"
-    category:"Categories"
+    category:"Oil"
    },
     
    {
@@ -281,7 +281,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#900"
-    category:"Categories"
+    category:"Oil"
    },
     
   {
@@ -289,7 +289,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#800"
-    category:"Categories"
+    category:"Oil"
   },
     
    {
@@ -297,7 +297,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#600"
-    category:"Categories"
+    category:"Oil"
     
    },
   {
@@ -305,7 +305,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#800"
-    category:"Categories"
+    category:"Oil"
   },
     
    {
@@ -313,7 +313,7 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#900"
-    category:"Categories"
+    category:"Oil"
    },
     
     {
@@ -321,6 +321,6 @@ export default menu[
     title:"Golden Penny Twist",
     description:"Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price:"#800"
-    category:"Categories"
+    category:"Oil"
     }
 ]
