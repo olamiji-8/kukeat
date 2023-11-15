@@ -1,4 +1,4 @@
- const data = [
+const data = [
   {
     id: 1,
     title: "Golden Penny Noodles",
@@ -319,3 +319,5 @@
     category: "Oil",
   },
 ];
+
+module.exports = data;
