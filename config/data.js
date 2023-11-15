@@ -4,6 +4,7 @@ const data = [
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Pasta",
   },
 
@@ -12,6 +13,7 @@ const data = [
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Pasta",
   },
 
@@ -20,6 +22,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Pasta",
   },
 
@@ -28,6 +31,7 @@ const data = [
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Pasta",
   },
 
@@ -36,6 +40,7 @@ const data = [
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Pasta",
   },
 
@@ -44,6 +49,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Pasta",
   },
 
@@ -52,6 +58,7 @@ const data = [
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Pasta",
   },
 
@@ -59,7 +66,8 @@ const data = [
     id: 8,
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-    price: "#800",
+    price: "#800",image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
+
     category: "Pasta",
   },
 
@@ -68,6 +76,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Groceries",
   },
 
@@ -76,6 +85,7 @@ const data = [
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Groceries",
   },
 
@@ -84,6 +94,7 @@ const data = [
     title: "Golden Penny Noodles",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Groceries",
   },
 
@@ -92,6 +103,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Groceries",
   },
 
@@ -100,6 +112,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Groceries",
   },
 
@@ -108,6 +121,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Groceries",
   },
 
@@ -116,6 +130,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Groceries",
   },
 
@@ -124,6 +139,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Groceries",
   },
 
@@ -132,6 +148,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Beverages",
   },
 
@@ -140,6 +157,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Beverages",
   },
 
@@ -148,6 +166,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Beverages",
   },
 
@@ -156,6 +175,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Beverages",
   },
 
@@ -164,6 +184,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Beverages",
   },
 
@@ -172,6 +193,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Beverages",
   },
 
@@ -180,6 +202,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Beverages",
   },
 
@@ -188,6 +211,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Beverages",
   },
 
@@ -196,6 +220,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Swallow",
   },
 
@@ -204,6 +229,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Swallow",
   },
 
@@ -212,6 +238,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Swallow",
   },
 
@@ -220,6 +247,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Swallow",
   },
 
@@ -228,6 +256,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Swallow",
   },
 
@@ -236,6 +265,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Swallow",
   },
 
@@ -244,6 +274,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Swallow",
   },
 
@@ -252,6 +283,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Swallow",
   },
 
@@ -260,6 +292,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Oil",
   },
 
@@ -268,6 +301,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Oil",
   },
 
@@ -276,6 +310,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Oil",
   },
 
@@ -284,6 +319,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Oil",
   },
 
@@ -292,6 +328,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#600",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
     category: "Oil",
   },
 
@@ -300,6 +337,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
     category: "Oil",
   },
 
@@ -308,6 +346,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#900",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
     category: "Oil",
   },
 
@@ -316,6 +355,7 @@ const data = [
     title: "Golden Penny Twist",
     description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
     price: "#800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
     category: "Oil",
   },
 ];
