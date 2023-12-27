@@ -27,6 +27,26 @@ router.get('/menu/category/:category', (req, res) => {
   }
 });
 
+
+
+// GET a specific menu item by category and ID
+router.get('/menu/category/:categoryName/:id', (req, res) => {
+  const categoryName = req.params.categoryName.toLowerCase();
+  const itemId = parseInt(req.params.id);
+  console.log(`GET request for menu item in category "${categoryName}" with ID: ${itemId}`);
+  
+  // Find the menu item by category and ID
+  const menuItem = menuData.find(item => item.category.toLowerCase() === categoryName && item.id === itemId);
+
+  if (menuItem) {
+    res.json(menuItem);
+  } else {
+    res.status(404).json({ error: 'Item not found in this category' });
+  }
+});
+
+
+
 // GET a specific menu item by ID
 router.get('/menu/:id', (req, res) => {
   const itemId = parseInt(req.params.id);
