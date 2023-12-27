@@ -12,6 +12,21 @@ router.get('/menu', (req, res) => {
   res.json(menuData);
 });
 
+// GET menu items by category
+router.get('/menu/category/:category', (req, res) => {
+  const category = req.params.category.toLowerCase(); // Get the category from the URL
+  console.log(`GET request for menu items in category: ${category}`);
+  
+  // Filter menu items based on the category
+  const itemsInCategory = menuData.filter(item => item.category.toLowerCase() === category);
+  
+  if (itemsInCategory.length > 0) {
+    res.json(itemsInCategory);
+  } else {
+    res.status(404).json({ error: 'No items found in this category' });
+  }
+});
+
 // GET a specific menu item by ID
 router.get('/menu/:id', (req, res) => {
   const itemId = parseInt(req.params.id);
