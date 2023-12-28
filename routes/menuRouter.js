@@ -60,6 +60,43 @@ router.get('/menu/:id', (req, res) => {
   }
 });
 
+
+// GET all categories with associated images
+router.get('/categories', (req, res) => {
+  const categoriesMap = new Map();
+
+  // Group menu items by category
+  menuData.forEach(item => {
+    if (!categoriesMap.has(item.category)) {
+      categoriesMap.set(item.category, []);
+    }
+    categoriesMap.get(item.category).push({
+      id: item.id,
+      image: item.image
+    });
+  });
+
+  // Format categories with their associated images
+  const categoriesWithImages = [];
+  categoriesMap.forEach((images, category) => {
+    categoriesWithImages.push({
+      category,
+      images
+    });
+  });
+
+  if (categoriesWithImages.length > 0) {
+    res.json(categoriesWithImages);
+  } else {
+    res.status(404).json({ error: 'No categories found' });
+  }
+});
+
+module.exports = router;
+
+
+
+
 // Add more routes as needed
 router.get("/store", (req,res)=>{
   console.log('GET request for all store items');
