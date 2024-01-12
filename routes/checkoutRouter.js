@@ -1,9 +1,10 @@
-const express = require ("express");
-const checkout = require("../controller/useCrtl");
-const router = express.Router();
+// const express = require ("express");
+// const checkout = require("../controller/useCrtl");
+// const router = express.Router();
 
-router.post("/checkout", checkout);
-module.exports = router;
+// router.post("/checkout", checkout);
+// module.exports = router;
+
 
 
 

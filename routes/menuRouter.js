@@ -5,6 +5,7 @@ const router = express.Router();
 const path = require('path');
 const menuData = require('../config/data');
 const storeData= require("../config/data1");
+const categoriesData= require("../config/categories");
 
 // GET all menu items
 router.get('/menu', (req, res) => {
@@ -92,10 +93,6 @@ router.get('/categories', (req, res) => {
   }
 });
 
-module.exports = router;
-
-
-
 
 // Add more routes as needed
 router.get("/store", (req,res)=>{
@@ -115,4 +112,28 @@ router.get('/store/:id', (req, res) => {
     res.status(404).json({ error: 'Item not found' });
   }
 });
+
+
+// Order Categories routes 
+router.get("/order", (req,res)=>{
+  console.log('GET request for all order items');
+  res.json(categoriesData)
+})
+
+// GET a specific store item by ID
+router.get('/order/:id', (req, res) => {
+  const orderId = parseInt(req.params.id);
+  console.log(`GET request for order item with ID: ${orderId}`);
+  const orderItem = categoriesData.find(item => item.id === orderId);
+
+  if (orderItem) {
+    res.json(orderItem);
+  } else {
+    res.status(404).json({ error: 'Item not found' });
+  }
+});
+
 module.exports = router;
+
+
+

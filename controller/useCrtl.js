@@ -1,16 +1,13 @@
-const User = require("../models/checkoutModel");
-
+// checkoutController.js
+const User = require('./models/checkoutModel');
+const Order = require('./models/order');
+const Item = require('./models/item'); // Import the Item model
 
 const checkout = async (req, res) => {
     try {
-        // Extract user input from the request body
-        const { email, fullname, phoneNumber, address, city, state } = req.body;
+        const { email, fullname, phoneNumber, address, city, state, cartItems } = req.body;
 
-        // Perform any necessary validation on the input data
-        // For example, you can check if the email is in a valid format
-        // You can also check if the phone number follows a specific format
-
-        // Create a new user record in the database using the User model
+        // Create a new user record in the database
         const newUser = new User({
             email,
             fullname,
@@ -19,18 +16,49 @@ const checkout = async (req, res) => {
             city,
             state,
         });
+        const user = await newUser.save();
 
-        // Save the user record to the database
-        await newUser.save();
+        // Create an order object that includes user ID
+        const order = new Order({
+            userId: user._id,
+            // ... other order-related information you want to store
+        });
 
-        // Return a success response to the client
-        res.status(200).json({ message: 'Order placed successfully!' });
+        // Save the order record to your database
+        await order.save();
+
+        // Loop through cartItems and associate them with the order
+        for (const cartItem of cartItems) {
+            const { itemId, quantity } = cartItem;
+
+            // Find the item in the Item model
+            const item = await Item.findById(itemId);
+            
+            if (item) {
+                // Assuming each item has a price, calculate the subtotal for the item
+                const subtotal = item.price * quantity;
+
+                // Create an item object associated with the order
+                const orderItem = new Item({
+                    orderId: order._id,
+                    itemId,
+                    quantity,
+                    subtotal,
+                    // ... other relevant item details you want to store
+                });
+
+                // Save the item record to your database
+                await orderItem.save();
+            } else {
+                // Handle cases where the item is not found
+            }
+        }
+
+        res.status(200).json({ message: 'Order placed successfully!', orderId: order._id });
     } catch (error) {
-        // Handle any errors that occur during the process
         console.error(error);
         res.status(500).json({ error: 'Internal server error' });
     }
 };
 
-// Export the checkout function to use it in your routes
 module.exports = checkout;

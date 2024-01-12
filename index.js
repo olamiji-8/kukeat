@@ -8,6 +8,7 @@ const menuRouter = require('./routes/menuRouter'); // Include the new menuRouter
 const requestLogger = require('./middlewares/requestLogger');
 const storeRouter = require('./routes/menuRouter')
 
+
 const app = express();
 app.use(cors());
 
@@ -18,7 +19,7 @@ dbconnect();
 
 app.use(express.json());
 app.use(requestLogger)
-app.use('/api', checkoutRouter);
+// app.use('/api', checkoutRouter);
 app.use('/api', menuRouter); // Use the menuRouter for /api/menu
 // app.use('/api', storeRouter);
 
