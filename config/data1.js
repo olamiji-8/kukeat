@@ -38,7 +38,7 @@ const data = [
         description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
         price: "600",
         image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
-        category: "Coker’s Delight",
+        category: "Combo Plus",
       },
     
       {
@@ -47,7 +47,7 @@ const data = [
         description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
         price: "800",
         image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-        category: "Coker’s Delight",
+        category: "Combo Plus",
       },
       {
           id: 7,
@@ -55,7 +55,7 @@ const data = [
           description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
           price: "900",
           image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-          category: "Coker’s Delight",
+          category: "Combo Plus",
         },
         {
           id: 8,
@@ -63,7 +63,7 @@ const data = [
           description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
           price: "300",
           image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-          category: "Coker’s Delight",
+          category: "Combo Plus",
         },
         {
             id: 9,
