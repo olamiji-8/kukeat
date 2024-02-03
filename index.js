@@ -3,10 +3,10 @@ const express = require('express');
 const cors = require('cors');
 
 const dbconnect = require('./config/dbconnect');
-const checkoutRouter = require('./routes/checkoutRouter');
+// const checkoutRouter = require('./routes/checkoutRouter');
 const menuRouter = require('./routes/menuRouter'); // Include the new menuRouter
 const requestLogger = require('./middlewares/requestLogger');
-const storeRouter = require('./routes/menuRouter');
+// const storeRouter = require('./routes/menuRouter');
 const cartRouter = require('./routes/cartRouter');
 
 
