@@ -10,4 +10,4 @@ const cartItemSchema = new Schema({
     totalPrice: Number // Include total price for the item
 });
 
-module.exports = mongoose.model('cartItem', cartItemSchema);
+module.exports = mongoose.model('CartItem', cartItemSchema);
