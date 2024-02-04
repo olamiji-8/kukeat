@@ -24,6 +24,7 @@ app.use(requestLogger)
 app.use('/api', menuRouter); // Use the menuRouter for /api/menu
 app.use('/api/cart', cartRouter);
 // app.use('/api', storeRouter);
+app.use('/api', menuRouter);
 
 
 

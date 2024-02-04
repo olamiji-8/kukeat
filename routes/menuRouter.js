@@ -6,6 +6,7 @@ const path = require('path');
 const menuData = require('../config/data');
 const storeData= require("../config/data1");
 const categoriesData= require("../config/categories");
+const blogData = require("../config/blog")
 
 // GET all menu items
 router.get('/menu', (req, res) => {
@@ -27,6 +28,7 @@ router.get('/menu/category/:category', (req, res) => {
     res.status(404).json({ error: 'No items found in this category' });
   }
 });
+
 
 
 
@@ -131,6 +133,14 @@ router.get('/order/:id', (req, res) => {
   } else {
     res.status(404).json({ error: 'Item not found' });
   }
+});
+
+
+
+// GET blog item
+router.get('/blog', (req, res) => {
+  console.log('GET request for blog items');
+  res.json(blogData);
 });
 
 module.exports = router;
