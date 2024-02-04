@@ -8,6 +8,7 @@ const menuRouter = require('./routes/menuRouter'); // Include the new menuRouter
 const requestLogger = require('./middlewares/requestLogger');
 // const storeRouter = require('./routes/menuRouter');
 const cartRouter = require('./routes/cartRouter');
+const checkoutRouter = require('./routes/checkoutRouter');
 
 
 const app = express();
@@ -25,6 +26,7 @@ app.use('/api', menuRouter); // Use the menuRouter for /api/menu
 app.use('/api/cart', cartRouter);
 // app.use('/api', storeRouter);
 app.use('/api', menuRouter);
+app.use('/api/checkout', checkoutRouter);
 
 
 
