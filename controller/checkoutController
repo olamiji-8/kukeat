@@ -1,0 +1,28 @@
+
+
+const User = require('../models/checkoutModel');
+
+// Controller to handle adding items to the cart
+exports.checkout = async (req, res) => {
+    try {
+        const { email, fullname, phoneNumber, address, city, state, cartItems } = req.body;
+
+        // Create a new cart item
+        const newUser = new User({
+            email,
+            fullname,
+            phoneNumber,
+            address,
+            city,
+            state
+        });
+
+        // Save the item to the database
+        await newUser.save();
+
+        res.status(201).json({ message: 'Order placed successfully!', newUser });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Server error' });
+    }
+};
