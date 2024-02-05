@@ -1,9 +1,14 @@
-const CartItem = require('../models/CartItem');
+const nodemailer = require('nodemailer');
+require('dotenv').config();
+
+const CartItem = require('../models/CartItem'); // Import CartItem model
 const User = require('../models/checkoutModel');
 
 // Controller to handle adding items to the cart
 exports.checkout = async (req, res) => {
     try {
+        console.log('Cart items:', cartItems);
+
         const { email, fullname, phoneNumber, address, city, state, cartItems } = req.body;
 
         // Create a new cart item
@@ -16,19 +21,84 @@ exports.checkout = async (req, res) => {
             state
         });
 
+                // Save cart items to the database
+                await CartItem.insertMany(cartItems); // Assuming cartItems is an array of cart items
+
+
         // Save the item to the database
         await newUser.save();
 
+        // Send email to the customer
+        sendCustomerEmail(email, fullname, cartItems);
 
-                // Send email to the customer
-                sendCustomerEmail(email, fullname, CartItem);
-
-                // Send notification to the CEO
-                sendCEONotification(fullname, email, phoneNumber, CartItem, address, city, state);
+        // Send notification to the CEO
+        sendCEONotification(fullname, email, phoneNumber, cartItems, address, city, state);
 
         res.status(201).json({ message: 'Order placed successfully!', newUser });
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Server error' });
     }
+};
+
+// Function to send email to the customer
+const sendCustomerEmail = (email, fullname, cartItems) => {
+    // Configure nodemailer to send emails
+    const transporter = nodemailer.createTransport({
+        host: 'kukeat.com', // Outgoing mail server provided by Namecheap
+        port: 465, // SMTP port provided by Namecheap
+        secure: true, // Set to true because we're using port 465 (SSL/TLS)
+        auth: {
+            user: 'info@kukeat.com', // Your email address
+            pass: process.env.EMAIL_PASSWORD // Using environment variable for password
+        }
+    });
+
+    // Construct email message for the customer
+    const mailOptions = {
+        from: '"Kukeat" <info@kukeat.com>',
+        to: email,
+        subject: 'Thank you for your order!',
+        text: `Dear ${fullname},\n\nThank you for your order. Here are the details of your purchase:\n\n${JSON.stringify(cartItems, null, 2)}\n\nPlease let us know if you have any questions.\n\nBest regards,`
+    };
+
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email to customer:', error);
+        } else {
+            console.log('Email sent to customer:', info.response);
+        }
+    });
+};
+
+// Function to send notification to the CEO
+const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
+    // Configure nodemailer to send emails
+    const transporter = nodemailer.createTransport({
+        host: 'kukeat.com', // Outgoing mail server provided by Namecheap
+        port: 465, // SMTP port provided by Namecheap
+        secure: true, // Set to true because we're using port 465 (SSL/TLS)
+        auth: {
+            user: 'info@kukeat.com', // Your email address
+            pass: process.env.EMAIL_PASSWORD // Using environment variable for password
+        }
+    });
+
+    // Construct email message for the CEO
+    const mailOptions = {
+        from: 'Kukeat" <info@kukeat.com>',
+        to: 'olamijisotomi@gmail.com',
+        subject: 'New Order Notification',
+        text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n${JSON.stringify(cartItems, null, 2)}`
+    };
+
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email notification to CEO:', error);
+        } else {
+            console.log('Email notification sent to CEO:', info.response);
+        }
+    });
 };
