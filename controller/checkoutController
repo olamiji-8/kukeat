@@ -1,5 +1,4 @@
-
-
+const CartItem = require('../models/CartItem');
 const User = require('../models/checkoutModel');
 
 // Controller to handle adding items to the cart
@@ -19,6 +18,13 @@ exports.checkout = async (req, res) => {
 
         // Save the item to the database
         await newUser.save();
+
+
+                // Send email to the customer
+                sendCustomerEmail(email, fullname, CartItem);
+
+                // Send notification to the CEO
+                sendCEONotification(fullname, email, phoneNumber, CartItem, address, city, state);
 
         res.status(201).json({ message: 'Order placed successfully!', newUser });
     } catch (err) {

@@ -5,10 +5,8 @@ const CartItem = require('../models/CartItem');
 // Controller to handle adding items to the cart
 exports.addItemToCart = async (req, res) => {
     try {
-        const { itemName, quantity, price } = req.body;
+        const { itemName, quantity, price, totalPrice } = req.body;
 
-        // Calculate total price for the item
-        const totalPrice = quantity * price;
 
         // Create a new cart item
         const newItem = new CartItem({
