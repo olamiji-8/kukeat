@@ -125,7 +125,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
     // Construct email message for the CEO
     const mailOptions = {
         from: 'Kukeat" <info@kukeat.com>',
-        to: 'olamijisotomi@gmail.com',
+        to: 'demiladeala@gmail.com',
         subject: 'New Order Notification',
         text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Item:\n${JSON.stringify(cartItems, null, 2)}`
     };
