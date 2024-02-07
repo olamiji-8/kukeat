@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(requestLogger)
 // app.use('/api', checkoutRouter);
 app.use('/api', menuRouter); // Use the menuRouter for /api/menu
-app.use('/api/cart', cartRouter);
+// app.use('/api/cart', cartRouter);
 // app.use('/api', storeRouter);
 app.use('/api', menuRouter);
 app.use('/api/checkout', checkoutRouter);

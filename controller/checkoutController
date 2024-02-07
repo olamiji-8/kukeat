@@ -1,32 +1,65 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
+
+
 const CartItem = require('../models/CartItem'); // Import CartItem model
 const User = require('../models/checkoutModel');
 
 // Controller to handle adding items to the cart
 exports.checkout = async (req, res) => {
     try {
-        console.log('Cart items:', cartItems);
-
-        const { email, fullname, phoneNumber, address, city, state, cartItems } = req.body;
-
-        // Create a new cart item
-        const newUser = new User({
-            email,
-            fullname,
-            phoneNumber,
-            address,
-            city,
-            state
-        });
-
-                // Save cart items to the database
-                await CartItem.insertMany(cartItems); // Assuming cartItems is an array of cart items
+        // Extract user details and cart items from the request body
+        const { email, fullname, phoneNumber, address, city, state,cartItems} = req.body;
 
 
-        // Save the item to the database
-        await newUser.save();
+        // // Create a new user object
+        // const newUser = new User({
+        //     email,
+        //     fullname,
+        //     phoneNumber,
+        //     address,
+        //     city,
+        //     state
+        // });
+
+        // // Save the new user to the database
+        // await newUser.save();
+
+    //     let user = await User.findOne({ email });
+    //     if (!user) {
+    //         user = new User({ email, fullname, phoneNumber, address, city, state });
+    //         await user.save();
+    //     }
+
+    //  // Retrieve cart items associated with the user
+    //  const cartItems = await CartItem.find({ userId: user._id });
+
+     // Save user information to the database
+        // Check if a user with the same email or phone number already exists
+
+        let user = await User.findOne({ $or: [{ email }, { phoneNumber }] });
+
+        if (!user) {
+            // If user does not exist, create a new user
+            user = new User({ email, fullname, phoneNumber, address, city, state });
+            await user.save();
+        } else {
+            // If user already exists, update the user's information
+            user.fullname = fullname;
+            user.address = address;
+            user.city = city;
+            user.state = state;
+            user.phoneNumber = phoneNumber;
+            await user.save();
+        }
+
+
+     // Save order details to the database
+     const cartitem = new CartItem({ userId: user._id, items: cartItems });
+     await cartitem.save();
+
+
 
         // Send email to the customer
         sendCustomerEmail(email, fullname, cartItems);
@@ -34,12 +67,16 @@ exports.checkout = async (req, res) => {
         // Send notification to the CEO
         sendCEONotification(fullname, email, phoneNumber, cartItems, address, city, state);
 
-        res.status(201).json({ message: 'Order placed successfully!', newUser });
+        // Send notification to the CO
+        sendCONotification(fullname, email, phoneNumber, cartItems, address, city, state);
+
+        res.status(200).json({ message: 'Checkout process initiated successfully' });
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Server error' });
     }
 };
+
 
 // Function to send email to the customer
 const sendCustomerEmail = (email, fullname, cartItems) => {
@@ -90,7 +127,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
         from: 'Kukeat" <info@kukeat.com>',
         to: 'olamijisotomi@gmail.com',
         subject: 'New Order Notification',
-        text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n${JSON.stringify(cartItems, null, 2)}`
+        text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Item:\n${JSON.stringify(cartItems, null, 2)}`
     };
 
     // Send the email
@@ -99,6 +136,38 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
             console.error('Error sending email notification to CEO:', error);
         } else {
             console.log('Email notification sent to CEO:', info.response);
+        }
+    });
+};
+
+
+// Function to send notification to the CO
+const sendCONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
+    // Configure nodemailer to send emails
+    const transporter = nodemailer.createTransport({
+        host: 'kukeat.com', // Outgoing mail server provided by Namecheap
+        port: 465, // SMTP port provided by Namecheap
+        secure: true, // Set to true because we're using port 465 (SSL/TLS)
+        auth: {
+            user: 'info@kukeat.com', // Your email address
+            pass: process.env.EMAIL_PASSWORD // Using environment variable for password
+        }
+    });
+
+    // Construct email message for the CO
+    const mailOptions = {
+        from: 'Kukeat" <info@kukeat.com>',
+        to: 'olamijisotomi@gmail.com',
+        subject: 'New Order Notification',
+        text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Item:\n${JSON.stringify(cartItems, null, 2)}`
+    };
+
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email notification to CO:', error);
+        } else {
+            console.log('Email notification sent to CO:', info.response);
         }
     });
 };
