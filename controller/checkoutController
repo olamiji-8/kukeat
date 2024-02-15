@@ -82,7 +82,7 @@ exports.checkout = async (req, res) => {
 const sendCustomerEmail = (email, fullname, cartItems) => {
     // Configure nodemailer to send emails
     const transporter = nodemailer.createTransport({
-        host: 'kukeat.com', // Outgoing mail server provided by Namecheap
+        host: 'server119.web-hosting.com', // Outgoing mail server provided by Namecheap
         port: 465, // SMTP port provided by Namecheap
         secure: true, // Set to true because we're using port 465 (SSL/TLS)
         auth: {
@@ -113,7 +113,7 @@ const sendCustomerEmail = (email, fullname, cartItems) => {
 const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
     // Configure nodemailer to send emails
     const transporter = nodemailer.createTransport({
-        host: 'kukeat.com', // Outgoing mail server provided by Namecheap
+        host: 'server119.web-hosting.com', // Outgoing mail server provided by Namecheap
         port: 465, // SMTP port provided by Namecheap
         secure: true, // Set to true because we're using port 465 (SSL/TLS)
         auth: {
@@ -125,7 +125,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
     // Construct email message for the CEO
     const mailOptions = {
         from: 'Kukeat" <info@kukeat.com>',
-        to: 'demiladeala@gmail.com',
+        to: 'olamijisotomi@gmail.com',
         subject: 'New Order Notification',
         text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Item:\n${JSON.stringify(cartItems, null, 2)}`
     };
@@ -145,7 +145,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
 const sendCONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
     // Configure nodemailer to send emails
     const transporter = nodemailer.createTransport({
-        host: 'kukeat.com', // Outgoing mail server provided by Namecheap
+        host: 'server119.web-hosting.com', // Outgoing mail server provided by Namecheap
         port: 465, // SMTP port provided by Namecheap
         secure: true, // Set to true because we're using port 465 (SSL/TLS)
         auth: {
