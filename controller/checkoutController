@@ -114,7 +114,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
-        to: 'ceo@company.com', // Replace with CEO's email
+        to: 'adetoromichael346@gmail.com', // Replace with CEO's email
         subject: 'New Order Notification',
         text: mailBody
     };
@@ -152,7 +152,7 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
-        to: 'co@company.com', // Replace with CO's email
+        to: 'olaleyedaniel076@gmail.com', // Replace with CO's email
         subject: 'New Order Notification',
         text: mailBody
     };
