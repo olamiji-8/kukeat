@@ -1,51 +1,19 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
-
-
-
 const CartItem = require('../models/CartItem'); // Import CartItem model
 const User = require('../models/checkoutModel');
 
 // Controller to handle adding items to the cart
 exports.checkout = async (req, res) => {
     try {
-        // Extract user details and cart items from the request body
-        const { email, fullname, phoneNumber, address, city, state,cartItems} = req.body;
-
-
-        // // Create a new user object
-        // const newUser = new User({
-        //     email,
-        //     fullname,
-        //     phoneNumber,
-        //     address,
-        //     city,
-        //     state
-        // });
-
-        // // Save the new user to the database
-        // await newUser.save();
-
-    //     let user = await User.findOne({ email });
-    //     if (!user) {
-    //         user = new User({ email, fullname, phoneNumber, address, city, state });
-    //         await user.save();
-    //     }
-
-    //  // Retrieve cart items associated with the user
-    //  const cartItems = await CartItem.find({ userId: user._id });
-
-     // Save user information to the database
-        // Check if a user with the same email or phone number already exists
+        const { email, fullname, phoneNumber, address, city, state, cartItems } = req.body;
 
         let user = await User.findOne({ $or: [{ email }, { phoneNumber }] });
 
         if (!user) {
-            // If user does not exist, create a new user
             user = new User({ email, fullname, phoneNumber, address, city, state });
             await user.save();
         } else {
-            // If user already exists, update the user's information
             user.fullname = fullname;
             user.address = address;
             user.city = city;
@@ -54,20 +22,11 @@ exports.checkout = async (req, res) => {
             await user.save();
         }
 
+        const cartitem = new CartItem({ userId: user._id, items: cartItems });
+        await cartitem.save();
 
-     // Save order details to the database
-     const cartitem = new CartItem({ userId: user._id, items: cartItems });
-     await cartitem.save();
-
-
-
-        // Send email to the customer
         sendCustomerEmail(email, fullname, cartItems);
-
-        // Send notification to the CEO
         sendCEONotification(fullname, email, phoneNumber, cartItems, address, city, state);
-
-        // Send notification to the CO
         sendCONotification(fullname, email, phoneNumber, cartItems, address, city, state);
 
         res.status(200).json({ message: 'Checkout process initiated successfully' });
@@ -77,29 +36,51 @@ exports.checkout = async (req, res) => {
     }
 };
 
+// Function to format cart items into a nice string for email
+const formatCartItems = (cartItems) => {
+    let formattedItems = '';
 
-// Function to send email to the customer
+    cartItems.forEach((item, index) => {
+        formattedItems += `Item ${index + 1}:\n`;
+        formattedItems += `Name: ${item.name}\n`;
+        formattedItems += `Quantity: ${item.quantity}\n`;
+        formattedItems += `Price: ${item.price}\n\n`;
+    });
+
+    return formattedItems;
+};
+
+/// Function to send email to the customer
 const sendCustomerEmail = (email, fullname, cartItems) => {
-    // Configure nodemailer to send emails
     const transporter = nodemailer.createTransport({
-        host: 'server119.web-hosting.com', // Outgoing mail server provided by Namecheap
-        port: 465, // SMTP port provided by Namecheap
-        secure: true, // Set to true because we're using port 465 (SSL/TLS)
+        host: 'server119.web-hosting.com',
+        port: 465,
+        secure: true,
         auth: {
-            user: 'info@kukeat.com', // Your email address
-            pass: process.env.EMAIL_PASSWORD // Using environment variable for password
+            user: 'info@kukeat.com',
+            pass: process.env.EMAIL_PASSWORD
         }
     });
 
-    // Construct email message for the customer
+    // Construct the email message body with formatted cart items
+    let mailBody = `Dear ${fullname},\n\nThank you for your order. Here are the details of your purchase:\n\n`;
+
+    cartItems.forEach((item, index) => {
+        mailBody += `Item ${index + 1}:\n`;
+        mailBody += `Name: ${item.name}\n`;
+        mailBody += `Quantity: ${item.quantity}\n`;
+        mailBody += `Price: ${item.price}\n\n`;
+    });
+
+    mailBody += 'Please let us know if you have any questions.\n\nBest regards,';
+
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
         to: email,
         subject: 'Thank you for your order!',
-        text: `Dear ${fullname},\n\nThank you for your order. Here are the details of your purchase:\n\n${JSON.stringify(cartItems, null, 2)}\n\nPlease let us know if you have any questions.\n\nBest regards,`
+        text: mailBody
     };
 
-    // Send the email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error('Error sending email to customer:', error);
@@ -111,26 +92,33 @@ const sendCustomerEmail = (email, fullname, cartItems) => {
 
 // Function to send notification to the CEO
 const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
-    // Configure nodemailer to send emails
     const transporter = nodemailer.createTransport({
-        host: 'server119.web-hosting.com', // Outgoing mail server provided by Namecheap
-        port: 465, // SMTP port provided by Namecheap
-        secure: true, // Set to true because we're using port 465 (SSL/TLS)
+        host: 'server119.web-hosting.com',
+        port: 465,
+        secure: true,
         auth: {
-            user: 'info@kukeat.com', // Your email address
-            pass: process.env.EMAIL_PASSWORD // Using environment variable for password
+            user: 'info@kukeat.com',
+            pass: process.env.EMAIL_PASSWORD
         }
     });
 
-    // Construct email message for the CEO
+    // Construct the email message body with formatted cart items
+    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
+
+    cartItems.forEach((item, index) => {
+        mailBody += `Item ${index + 1}:\n`;
+        mailBody += `Name: ${item.name}\n`;
+        mailBody += `Quantity: ${item.quantity}\n`;
+        mailBody += `Price: ${item.price}\n\n`;
+    });
+
     const mailOptions = {
-        from: 'Kukeat" <info@kukeat.com>',
-        to: 'olamijisotomi@gmail.com',
+        from: '"Kukeat" <info@kukeat.com>',
+        to: 'ceo@company.com', // Replace with CEO's email
         subject: 'New Order Notification',
-        text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Item:\n${JSON.stringify(cartItems, null, 2)}`
+        text: mailBody
     };
 
-    // Send the email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error('Error sending email notification to CEO:', error);
@@ -140,29 +128,35 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
     });
 };
 
-
 // Function to send notification to the CO
 const sendCONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
-    // Configure nodemailer to send emails
     const transporter = nodemailer.createTransport({
-        host: 'server119.web-hosting.com', // Outgoing mail server provided by Namecheap
-        port: 465, // SMTP port provided by Namecheap
-        secure: true, // Set to true because we're using port 465 (SSL/TLS)
+        host: 'server119.web-hosting.com',
+        port: 465,
+        secure: true,
         auth: {
-            user: 'info@kukeat.com', // Your email address
-            pass: process.env.EMAIL_PASSWORD // Using environment variable for password
+            user: 'info@kukeat.com',
+            pass: process.env.EMAIL_PASSWORD
         }
     });
 
-    // Construct email message for the CO
+    // Construct the email message body with formatted cart items
+    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
+
+    cartItems.forEach((item, index) => {
+        mailBody += `Item ${index + 1}:\n`;
+        mailBody += `Name: ${item.name}\n`;
+        mailBody += `Quantity: ${item.quantity}\n`;
+        mailBody += `Price: ${item.price}\n\n`;
+    });
+
     const mailOptions = {
-        from: 'Kukeat" <info@kukeat.com>',
-        to: 'olamijisotomi@gmail.com',
+        from: '"Kukeat" <info@kukeat.com>',
+        to: 'co@company.com', // Replace with CO's email
         subject: 'New Order Notification',
-        text: `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Item:\n${JSON.stringify(cartItems, null, 2)}`
+        text: mailBody
     };
 
-    // Send the email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error('Error sending email notification to CO:', error);
