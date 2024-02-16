@@ -42,9 +42,10 @@ const formatCartItems = (cartItems) => {
 
     cartItems.forEach((item, index) => {
         formattedItems += `Item ${index + 1}:\n`;
-        formattedItems += `Name: ${item.name}\n`;
+        formattedItems += `Item Name: ${item.itemName}\n`;
         formattedItems += `Quantity: ${item.quantity}\n`;
-        formattedItems += `Price: ${item.price}\n\n`;
+        formattedItems += `Price: ${item.price}\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
     });
 
     return formattedItems;
@@ -67,9 +68,10 @@ const sendCustomerEmail = (email, fullname, cartItems) => {
 
     cartItems.forEach((item, index) => {
         mailBody += `Item ${index + 1}:\n`;
-        mailBody += `Name: ${item.name}\n`;
+        mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
-        mailBody += `Price: ${item.price}\n\n`;
+        mailBody += `Price: ${item.price}\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
     });
 
     mailBody += 'Please let us know if you have any questions.\n\nBest regards,';
@@ -107,9 +109,10 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
 
     cartItems.forEach((item, index) => {
         mailBody += `Item ${index + 1}:\n`;
-        mailBody += `Name: ${item.name}\n`;
+        mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
-        mailBody += `Price: ${item.price}\n\n`;
+        mailBody += `Price: ${item.price}\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
     });
 
     const mailOptions = {
@@ -145,9 +148,10 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
 
     cartItems.forEach((item, index) => {
         mailBody += `Item ${index + 1}:\n`;
-        mailBody += `Name: ${item.name}\n`;
+        mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
-        mailBody += `Price: ${item.price}\n\n`;
+        mailBody += `Price: ${item.price}\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
     });
 
     const mailOptions = {
