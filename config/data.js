@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    title: "Golden penny - Premium taste",
+    title: "Golden penny(pieces)",
     description: "Premium taste",
     price: "730",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
@@ -19,7 +19,7 @@ const data = [
 
   {
     id: 3,
-    title: "Crown",
+    title: "Crown(pieces)",
     description: "100% Yummy",
     price: "679.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
@@ -28,7 +28,7 @@ const data = [
 
   {
     id: 4,
-    title: "Crown",
+    title: "Crown(pieces)",
     description: "100% Yummy",
     price: "679.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
@@ -37,7 +37,7 @@ const data = [
 
   {
     id: 5,
-    title: "Slim Golden penny",
+    title: "Slim Golden penny(pieces)",
     description: "Sweet delight and served in minutes",
     price: "",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
@@ -217,7 +217,7 @@ const data = [
 
   {
     id: 25,
-    title: "Golden penny Semo",
+    title: "Golden penny Semo(1Kg)",
     description: "Smooth Indulgence",
     price: "1449.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
@@ -226,7 +226,7 @@ const data = [
 
   {
     id: 26,
-    title: "Golden penny Semo",
+    title: "Golden penny Semo(1Kg)",
     description: "Smooth Indulgence",
     price: "1449.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
@@ -289,7 +289,7 @@ const data = [
 
   {
     id: 33,
-    title: "Devon’s King Oil",
+    title: "Devon’s King Oil(1 sachet)",
     description: "Culinary Excellence",
     price: "1999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oil_ci3aye.png",
@@ -298,7 +298,7 @@ const data = [
 
   {
     id: 34,
-    title: "Devon’s King Oil",
+    title: "Devon’s King Oil(1 sachet)",
     description: "Culinary Excellence",
     price: "1999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oil_ci3aye.png",
@@ -307,7 +307,7 @@ const data = [
 
   {
     id: 35,
-    title: "Palm Oil",
+    title: "Palm Oil (1 bottle)75cl",
     description: "Made from the finest oil plantations",
     price: "1100",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
@@ -316,7 +316,7 @@ const data = [
 
   {
     id: 36,
-    title: "Palm Oil",
+    title: "Palm Oil (1 bottle)75cl",
     description: "Made from the finest oil plantations",
     price: "1100",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
@@ -360,7 +360,7 @@ const data = [
   // },
   {
     id: 41,
-    title: "Oloyin",
+    title: "Oloyin(1 congo)",
     description: "Rich Legumes",
     price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
@@ -369,7 +369,7 @@ const data = [
 
   {
     id: 42,
-    title: "Oloyin",
+    title: "Oloyin(1 congo)",
     description: "Rich Legumes",
     price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
@@ -396,7 +396,7 @@ const data = [
 
   {
     id: 45,
-    title: "Drum",
+    title: "Drum(1 congo)",
     description: "Nutrient-Packed Legumes",
     price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
@@ -405,7 +405,7 @@ const data = [
 
   {
     id: 46,
-    title: "Drum",
+    title: "Drum(1 congo)",
     description: "Nutrient-Packed Legumes",
     price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
@@ -431,7 +431,7 @@ const data = [
   // },
   {
     id: 49,
-    title: "Dangote",
+    title: "Dangote 250g(1 sachet)",
     description: "Sweet Delight",
     price: "454.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
@@ -440,7 +440,7 @@ const data = [
 
   {
     id: 50,
-    title: "Dangote",
+    title: "Dangote 250g(1 sachet)",
     description: "Sweet Delight",
     price: "454.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
@@ -448,7 +448,7 @@ const data = [
   },
   {
     id: 51,
-    title: "Africa King(small seed)",
+    title: "Africa King(small seed) (1 congo)",
     description: "Small seeds, Big Flavour",
     price: "1999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
@@ -457,7 +457,7 @@ const data = [
 
   {
     id: 52,
-    title: "Africa King(small seed)",
+    title: "Africa King(small seed) (1 congo)",
     description: "Small seeds, Big Flavour",
     price: "1999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
@@ -466,7 +466,7 @@ const data = [
 
   {
     id: 53,
-    title: "Pretty lady Rice",
+    title: "Pretty lady Rice (1 congo)",
     description: "Made from the finest plantations",
     price: "1999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
@@ -475,7 +475,7 @@ const data = [
 
   {
     id: 54,
-    title: "Pretty lady Rice",
+    title: "Pretty lady Rice (1 congo)",
     description: "Made from the finest plantations",
     price: "1999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
@@ -483,7 +483,7 @@ const data = [
   },
   {
     id: 55,
-    title: "oriental",
+    title: "oriental(1 carton)",
     description: "Variety just for you.",
     price: "5899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oriental_noodles_k18txd.png",
@@ -492,7 +492,7 @@ const data = [
 
   {
     id: 56,
-    title: "oriental",
+    title: "oriental(1 carton)",
     description: "Variety just for you.",
     price: "5899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oriental_noodles_k18txd.png",
@@ -518,7 +518,7 @@ const data = [
 
   {
     id: 59,
-    title: "indomitable",
+    title: "indomitable (1 carton)",
     description: "The fastest fast-food",
     price: "5899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/indominate_noodles_ip9f6l.png",
@@ -526,7 +526,7 @@ const data = [
   },
   {
     id: 60,
-    title: "indomitable",
+    title: "indomitable (1 carton)",
     description: "The fastest fast-food",
     price: "5899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/indominate_noodles_ip9f6l.png",
@@ -535,7 +535,7 @@ const data = [
 
   {
     id: 61,
-    title: "onions chicken",
+    title: "onions chicken(1 carton)",
     description: "Variety just for you.",
     price: "6299.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/onion_chicken_uz95om.png",
@@ -544,7 +544,7 @@ const data = [
 
   {
     id: 62,
-    title: "onions chicken",
+    title: "onions chicken(1 carton)",
     description: "Variety just for you.",
     price: "6299.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/onion_chicken_uz95om.png",
@@ -553,7 +553,7 @@ const data = [
 
   {
     id: 63,
-    title: "Gino pepper and onions",
+    title: "Gino pepper and onions(1 roll)",
     description: "Perfect for stew and soup",
     price: "649.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
@@ -561,7 +561,7 @@ const data = [
   },
   {
     id: 64,
-    title: "Gino pepper and onions",
+    title: "Gino pepper and onions(1 roll)",
     description: "Perfect for stew and soup",
     price: "649.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
@@ -569,7 +569,7 @@ const data = [
   },
   {
     id: 65,
-    title: "Gino pepper and onions",
+    title: "Gino pepper and onions(1 roll)",
     description: "Perfect for stew and soup",
     price: "649.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
@@ -577,7 +577,7 @@ const data = [
   },
   {
     id: 66,
-    title: "Gino tomato",
+    title: "Gino tomato(1 roll)",
     description: " 100% richness.",
     price: "629.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_paste_dif8qb.png",
@@ -585,7 +585,7 @@ const data = [
   },
   {
     id: 67,
-    title: "Gino tomato",
+    title: "Gino tomato(1 roll)",
     description: " 100% richness.",
     price: "629.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_paste_dif8qb.png",
@@ -593,7 +593,7 @@ const data = [
   },
   {
     id: 68,
-    title: "Gino party jollof",
+    title: "Gino party jollof(1 roll)",
     description: "Spice up your jollof rice.",
     price: "680",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
@@ -601,7 +601,7 @@ const data = [
   },
   {
     id: 69,
-    title: "Gino party jollof",
+    title: "Gino party jollof(1 roll)",
     description: "Spice up your jollof rice.",
     price: "680",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
@@ -609,7 +609,7 @@ const data = [
   },
   {
     id: 70,
-    title: "Gino party jollof",
+    title: "Gino party jollof(1 roll)",
     description: "Spice up your jollof rice.",
     price: "680",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
@@ -617,15 +617,15 @@ const data = [
   },
   {
     id: 71,
-    title: "Gino",
+    title: "Gino( 1 roll)",
     description: "The must-add spice!",
     price: "514.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/Gino_curry_ym7i9f.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/( 1 roll)_curry_ym7i9f.png",
     category: "Curry",
   },
   {
     id: 72,
-    title: "Gino",
+    title: "Gino (1 roll)",
     description: "The must-add spice!",
     price: "514.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/Gino_curry_ym7i9f.png",
@@ -641,7 +641,7 @@ const data = [
   },
   {
     id: 74,
-    title: "Tasty cubes",
+    title: "Tasty cubes(1 sachet)",
     description: "Sweet flavour",
     price: "359.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/magi_ltcq2g.png",
@@ -649,7 +649,7 @@ const data = [
   },
   {
     id: 75,
-    title: "Tasty cubes",
+    title: "Tasty cubes(1 sachet)",
     description: "Sweet flavour",
     price: "359.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/magi_ltcq2g.png",
@@ -657,7 +657,7 @@ const data = [
   },
   {
     id: 76,
-    title: "Maggi",
+    title: "Maggi(1 sachet)",
     description: "Timeless Culinary Essence",
     price: "400",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/maggi_seasoning_fx5tvv.png",
@@ -665,7 +665,7 @@ const data = [
   },
   {
     id: 77,
-    title: "Maggi",
+    title: "Maggi(1 sachet)",
     description: "Timeless Culinary Essence",
     price: "400",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/maggi_seasoning_fx5tvv.png",
@@ -673,7 +673,7 @@ const data = [
   },
   {
     id: 78,
-    title: "Knorr",
+    title: "Knorr(1 sachet)",
     description: "Makes your food taste 2x better.",
     price: "450(12pcs)",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/Knor_magi_ley4me.png",
@@ -681,7 +681,7 @@ const data = [
   },
   {
     id: 79,
-    title: "Knorr",
+    title: "Knorr(1 sachet)",
     description: "Makes your food taste 2x better.",
     price: "450(12pcs)",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/Knor_magi_ley4me.png",
@@ -689,7 +689,7 @@ const data = [
   },
   {
     id: 80,
-    title: "Knorr",
+    title: "Knorr(1 sachet)",
     description: "Makes your food taste 2x better.",
     price: "1400(45pcs)",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/Knor_magi_ley4me.png",
@@ -697,7 +697,7 @@ const data = [
   },
   {
     id: 81,
-    title: "Titus",
+    title: "Titus(1 can)",
     description: "100% healthy and delicious.",
     price: "747",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/titus_kckwcz.png",
@@ -705,7 +705,7 @@ const data = [
   },
   {
     id: 82,
-    title: "Titus",
+    title: "Titus(1 can)",
     description: "100% healthy and delicious.",
     price: "747",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/titus_kckwcz.png",
@@ -721,7 +721,7 @@ const data = [
   },
   {
     id: 84,
-    title: "Geisha",
+    title: "Geisha(1 can)",
     description: "",
     price: "650",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/Geisha_keejkz.png",
@@ -761,7 +761,7 @@ const data = [
   // },
   {
     id: 89,
-    title: "Mr cheff",
+    title: "Mr cheff(1 sachet)",
     description: "Queen of your food.",
     price: "150",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
@@ -769,7 +769,7 @@ const data = [
   },
   {
     id: 90,
-    title: "Mr cheff",
+    title: "Mr cheff(1 sachet)",
     description: "Queen of your food.",
     price: "150",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
@@ -777,7 +777,7 @@ const data = [
   },
   {
     id: 91,
-    title: "Mr cheff",
+    title: "Mr cheff(1 sachet)",
     description: "Queen of your food.",
     price: "150",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
@@ -841,7 +841,7 @@ const data = [
   // },
   {
     id: 99,
-    title: "MyMy",
+    title: "MyMy(1 pack)",
     description: "Every stick counts",
     price: "211",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/matches_g4bcgf.png",
@@ -849,7 +849,7 @@ const data = [
   },
   {
     id: 100,
-    title: "MyMy",
+    title: "MyMy(1 pack)",
     description: "Every stick counts",
     price: "211",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/matches_g4bcgf.png",
@@ -857,7 +857,7 @@ const data = [
   },
   {
     id: 101,
-    title: "White Garri",
+    title: "White Garri(1 congo)",
     description: "The bond that joins us together",
     price: "699.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/white_garri_sils5r.png",
@@ -865,7 +865,7 @@ const data = [
   },
   {
     id: 102,
-    title: "White Garri",
+    title: "White Garri(1 congo)",
     description: "The bond that joins us together",
     price: "699.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/white_garri_sils5r.png",

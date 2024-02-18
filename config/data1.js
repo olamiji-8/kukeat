@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    title: "Golden penny - Premium taste",
+    title: "Golden penny(pieces)",
     description: "Premium taste",
     price: "730",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
@@ -10,7 +10,7 @@ const data = [
 
   {
     id: 2,
-    title: "Crown",
+    title: "Crown(pieces)",
     description: "100% Yummy",
     price: "679.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
@@ -18,7 +18,7 @@ const data = [
   },
    {
     id: 3,
-    title: "Dangote",
+    title: "Dangote 250g(1 sachet)",
     description: "Sweet Delight",
     price: "454.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 4,
-    title: "indomitable",
+    title: "indomitable(1 carton)",
     description: "The fastest fast-food",
     price: "5899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/indominate_noodles_ip9f6l.png",
@@ -34,7 +34,7 @@ const data = [
   },
   {
     id: 5,
-    title: "Gino pepper and onions",
+    title: "Gino pepper and onions(1 roll)",
     description: "Perfect for stew and soup",
     price: "649.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
@@ -43,7 +43,7 @@ const data = [
   
   {
     id: 6,
-    title: "Titus",
+    title: "Titus(1 can)",
     description: "100% healthy and delicious.",
     price: "747",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/titus_kckwcz.png",
@@ -51,7 +51,7 @@ const data = [
   },
   {
     id: 7,
-    title: "MyMy",
+    title: "MyMy(1 pack)",
     description: "Every stick counts",
     price: "211",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/matches_g4bcgf.png",
@@ -59,7 +59,7 @@ const data = [
   },
   {
     id: 8,
-    title: "White Garri",
+    title: "White Garri(1 congo)",
     description: "The bond that joins us together",
     price: "699.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/white_garri_sils5r.png",
@@ -67,7 +67,7 @@ const data = [
   },
   {
     id: 9,
-    title: "Mr cheff",
+    title: "Mr cheff(1 sachet)",
     description: "Queen of your food.",
     price: "150",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
@@ -76,7 +76,7 @@ const data = [
       
   {
     id: 10,
-    title: "Titus",
+    title: "Titus(1 can)",
     description: "100% healthy and delicious.",
     price: "747",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/titus_kckwcz.png",
@@ -84,7 +84,7 @@ const data = [
   },
   {
     id: 11,
-    title: "Maggi",
+    title: "Maggi(1 sachet)",
     description: "Timeless Culinary Essence",
     price: "400",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/maggi_seasoning_fx5tvv.png",
@@ -100,7 +100,7 @@ const data = [
           // },
           {
             id: 13,
-            title: "Gino",
+            title: "Gino(1 roll)",
             description: "The must-add spice!",
             price: "514.97",
             image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/Gino_curry_ym7i9f.png",
@@ -109,7 +109,7 @@ const data = [
           
           {
             id: 14,
-            title: "Gino party jollof",
+            title: "Gino party jollof(1 roll)",
             description: "Spice up your jollof rice.",
             price: "680",
             image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
@@ -117,7 +117,7 @@ const data = [
           },
           {
             id: 15,
-            title: "onions chicken",
+            title: "onions chicken(1 carton)",
             description: "Variety just for you.",
             price: "6299.99",
             image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/onion_chicken_uz95om.png",
@@ -133,7 +133,7 @@ const data = [
               // },
               {
                 id: 17,
-                title: "Pretty lady Rice",
+                title: "Pretty lady Rice(1 congo)",
                 description: "Made from the finest plantations",
                 price: "1999.99",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
@@ -142,7 +142,7 @@ const data = [
               
               {
                 id: 18,
-                title: "Drum",
+                title: "Drum(1 congo)",
                 description: "Nutrient-Packed Legumes",
                 price: "1899.99",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
@@ -150,7 +150,7 @@ const data = [
               },
               {
                 id: 19,
-                title: "Palm Oil",
+                title: "Palm Oil(1 bottle) 75cl",
                 description: "Made from the finest oil plantations",
                 price: "1100",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
@@ -166,7 +166,7 @@ const data = [
                   // },
                   {
                     id: 21,
-                    title: "Golden penny Semo",
+                    title: "Golden penny Semo(1kg)",
                     description: "Smooth Indulgence",
                     price: "1449.97",
                     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
@@ -175,7 +175,7 @@ const data = [
                   
                   {
                     id: 22,
-                    title: "Slim Golden penny",
+                    title: "Slim Golden penny(pieces)",
                     description: "Sweet delight and served in minutes",
                     price: "",
                     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
@@ -183,7 +183,7 @@ const data = [
                   },
                   {
                     id: 23,
-                    title: "Oloyin",
+                    title: "Oloyin(1 congo)",
                     description: "Rich Legumes",
                     price: "1899.99",
                     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
