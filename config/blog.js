@@ -6,7 +6,7 @@ const blog = [
       date: "12 August 2023",
       image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707056660/blog_lndcnf.png",
       next: "Read Article",
-      url: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-xv/",
+      link: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-xv/",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const blog = [
         date: "12 August 2023",
         image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707056751/blog1_dgu1al.png",
         next: "Read Article",
-        url: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-xiv/",
+        link: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-xiv/",
       },
       {
         id: 3,
@@ -24,7 +24,7 @@ const blog = [
         date: "12 August 2023",
         image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707056752/blog2_cvvmwr.png",
         next: "Read Article",
-        url: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-iii/"
+        link: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-iii/"
       },
       {
         id: 4,
@@ -33,7 +33,7 @@ const blog = [
         date: "12 August 2023",
         image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707056753/blog3_qtkvdp.png",
         next: "Read Article",
-        url: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-iii/"
+        link: "https://blogs.kukeat.com/food-topics-are-tricky-how-to-choose-and-work-on-them-iii/"
       },
 ]
 
