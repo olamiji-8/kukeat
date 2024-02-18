@@ -45,7 +45,8 @@ const formatCartItems = (cartItems) => {
         formattedItems += `Item Name: ${item.itemName}\n`;
         formattedItems += `Quantity: ${item.quantity}\n`;
         formattedItems += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n`;
+        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
     });
 
     return formattedItems;
@@ -71,7 +72,8 @@ const sendCustomerEmail = (email, fullname, cartItems) => {
         mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n`;
+        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
     });
 
     mailBody += 'Please let us know if you have any questions.\n\nBest regards,';
@@ -112,7 +114,8 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
         mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n`;
+        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
     });
 
     const mailOptions = {
@@ -151,7 +154,8 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
         mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n`;
+        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
     });
 
     const mailOptions = {
