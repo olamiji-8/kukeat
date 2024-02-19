@@ -183,7 +183,7 @@ const data = [
                   },
                   {
                     id: 23,
-                    title: "Oloyin(1 congo)",
+                    title: "Honey beans(Ewa Oloyin)(1 congo)",
                     description: "Rich Legumes",
                     price: "1899.99",
                     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
