@@ -6,7 +6,7 @@ const User = require('../models/checkoutModel');
 // Controller to handle adding items to the cart
 exports.checkout = async (req, res) => {
     try {
-        const { email, fullname, phoneNumber, address, city, state, cartItems } = req.body;
+        const { email, fullname, phoneNumber, address, city, state, cartItems, sumTotal } = req.body;
 
         let user = await User.findOne({ $or: [{ email }, { phoneNumber }] });
 
@@ -25,7 +25,7 @@ exports.checkout = async (req, res) => {
         const cartitem = new CartItem({ userId: user._id, items: cartItems });
         await cartitem.save();
 
-        sendCustomerEmail(email, fullname, cartItems);
+        sendCustomerEmail(email, fullname, cartItems, sumTotal);
         sendCEONotification(fullname, email, phoneNumber, cartItems, address, city, state);
         sendCONotification(fullname, email, phoneNumber, cartItems, address, city, state);
 
@@ -45,15 +45,15 @@ const formatCartItems = (cartItems) => {
         formattedItems += `Item Name: ${item.itemName}\n`;
         formattedItems += `Quantity: ${item.quantity}\n`;
         formattedItems += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n`;
-        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
+        formattedItems += `Total Price: ${item.totalPrice}\n`;
+        formattedItems += `Sum Total Price: ${item.sumTotal}\n\n`;
     });
 
     return formattedItems;
 };
 
-/// Function to send email to the customer
-const sendCustomerEmail = (email, fullname, cartItems) => {
+// Function to send email to the customer
+const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
     const transporter = nodemailer.createTransport({
         host: 'server119.web-hosting.com',
         port: 465,
@@ -72,9 +72,11 @@ const sendCustomerEmail = (email, fullname, cartItems) => {
         mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n`;
-        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
     });
+
+    // Append the sumTotal at the end of the email body
+    mailBody += `Sum Total: ${sumTotal}\n\n`;
 
     mailBody += 'Please let us know if you have any questions.\n\nBest regards,';
 
@@ -114,8 +116,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
         mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n`;
-        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
     });
 
     const mailOptions = {
@@ -154,8 +155,7 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
         mailBody += `Item Name: ${item.itemName}\n`;
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n`;
-        mailBody += `Sum Total Price: ${item.sumTotal}\n\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
     });
 
     const mailOptions = {
@@ -172,4 +172,28 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
             console.log('Email notification sent to CO:', info.response);
         }
     });
+};
+
+// Controller to handle adding items to the cart
+exports.addItemToCart = async (req, res) => {
+    try {
+        const { itemName, quantity, price, totalPrice , sumTotal} = req.body;
+
+        // Create a new cart item
+        const newItem = new CartItem({
+            itemName,
+            quantity,
+            price,
+            totalPrice,
+            sumTotal
+        });
+
+        // Save the item to the database
+        await newItem.save();
+
+        res.status(201).json({ message: 'Item added to cart successfully', newItem });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Server error' });
+    }
 };

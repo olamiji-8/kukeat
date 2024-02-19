@@ -13,8 +13,7 @@ exports.addItemToCart = async (req, res) => {
             itemName,
             quantity,
             price,
-            totalPrice,
-            sumTotal
+            totalPrice
         });
 
         // Save the item to the database
