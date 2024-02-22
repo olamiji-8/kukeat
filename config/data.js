@@ -360,8 +360,8 @@ const data = [
   // },
   {
     id: 41,
-    title: "Honey beans(Ewa Oloyin)(1 congo)",
-    description: "Rich Legumes",
+    title: "Honey beans(Ewa Oloyin)",
+    description: "Rich Legumes(1 congo)",
     price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
     category: "Beans",
@@ -369,8 +369,8 @@ const data = [
 
   {
     id: 42,
-    title: "Honey beans(Ewa Oloyin)(1 congo)",
-    description: "Rich Legumes",
+    title: "Honey beans(Ewa Oloyin)",
+    description: "Rich Legumes(1 congo)",
     price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
     category: "Beans",

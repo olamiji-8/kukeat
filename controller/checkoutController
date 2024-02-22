@@ -109,7 +109,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
     });
 
     // Construct the email message body with formatted cart items
-    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
+    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nDelivery Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
 
     cartItems.forEach((item, index) => {
         mailBody += `Item ${index + 1}:\n`;
@@ -148,7 +148,7 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
     });
 
     // Construct the email message body with formatted cart items
-    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nShipping Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
+    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nDelivery Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
 
     cartItems.forEach((item, index) => {
         mailBody += `Item ${index + 1}:\n`;
