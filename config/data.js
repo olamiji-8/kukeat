@@ -377,23 +377,23 @@ const data = [
     category: "Beans",
   },
 
-  // {
-  //   id: 43,
-  //   title: "Sokoto",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Beans",
-  // },
+  {
+    id: 43,
+    title: "Sokoto(1 congo)",
+    description: "Versatile Legumes",
+    price: "1800",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
+    category: "Beans",
+  },
 
-  // {
-  //   id: 44,
-  //   title: "Sokoto",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Beans",
-  // },
+  {
+    id: 44,
+    title: "Sokoto(1 bag)",
+    description: "Versatile Legumes",
+    price: "121000",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
+    category: "Beans",
+  },
 
   {
     id: 45,
