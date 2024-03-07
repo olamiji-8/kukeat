@@ -35,14 +35,14 @@ const data = [
     category: "Pasta",
   },
 
-  {
-    id: 5,
-    title: "Slim Golden penny(pieces)",
-    description: "Sweet delight and served in minutes",
-    price: "",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
-    category: "Pasta",
-  },
+  // {
+  //   id: 5,
+  //   title: "Slim Golden penny(pieces)",
+  //   description: "Sweet delight and served in minutes",
+  //   price: "",
+  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
+  //   category: "Pasta",
+  // },
 
   // {
   //   id: 6,
@@ -509,7 +509,7 @@ const data = [
   //   category: "Noodles",
   // },
   // {
-  //   id: 58,
+  //   id: 58,Golden penny(pieces)
   //   title: "Indomie",
   //   description: "",
   //   price: "",
@@ -565,7 +565,7 @@ const data = [
     title: "Gino pepper and onions(1 carton)",
     description: "Perfect for stew and soup",
     price: "7190",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/gino_cartoon_g70awt.png",
     category: "Tomato Paste",
   },
   // {
@@ -589,7 +589,7 @@ const data = [
     title: "Gino tomato(1 carton)",
     description: " 100% richness.",
     price: "6690",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_paste_dif8qb.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_tomato_paste_jizr75.png",
     category: "Tomato Paste",
   },
   // {
@@ -613,7 +613,7 @@ const data = [
     title: "Gino party jollof(1 carton)",
     description: "Spice up your jollof rice.",
     price: "8190",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_party_jollof_cartoon_cdsctw.png",
     category: "Tomato Paste",
   },
   {
@@ -709,7 +709,7 @@ const data = [
     title: "Titus(1 carton)",
     description: "100% healthy and delicious.",
     price: "11800",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/titus_kckwcz.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Titus_carton_f1x3wr.png",
     category: "Can Food",
   },
   {
