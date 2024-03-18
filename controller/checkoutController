@@ -55,7 +55,7 @@ const formatCartItems = (cartItems) => {
 // Function to send email to the customer
 const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
     const transporter = nodemailer.createTransport({
-        host: 'server119.web-hosting.com',
+        host: 'server119-1.web-hosting.com',
         port: 465,
         secure: true,
         auth: {
@@ -99,7 +99,7 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
 // Function to send notification to the CEO
 const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
     const transporter = nodemailer.createTransport({
-        host: 'server119.web-hosting.com',
+        host: 'server119-1.web-hosting.com',
         port: 465,
         secure: true,
         auth: {
@@ -138,7 +138,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
 // Function to send notification to the CO
 const sendCONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
     const transporter = nodemailer.createTransport({
-        host: 'server119.web-hosting.com',
+        host: 'server119-1.web-hosting.com',
         port: 465,
         secure: true,
         auth: {
