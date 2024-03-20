@@ -4,7 +4,7 @@ const data = [
     title: "Golden penny(pieces)",
     description: "Premium taste",
     price: "870.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856795/IMG_9076_bqqbm2.jpg",
     category: "Pasta",
   },
 
@@ -13,7 +13,7 @@ const data = [
     title: "Golden penny(carton)",
     description: "Premium taste",
     price: "17299.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9081_eq3eii.jpg",
     category: "Pasta",
   },
 
@@ -302,7 +302,7 @@ const data = [
     title: "King’s oil(25ltrs)",
     description: "Culinary Excellence",
     price: "55000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oil_ci3aye.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9080_aohuhq.webp",
     category: "Oil",
   },
 
@@ -435,7 +435,7 @@ const data = [
     title: "Dangote 250g(1 sachet)",
     description: "Sweet Delight",
     price: "519.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9074_j8nczg.jpg",
     category: "Sugar (smallest size)",
   },
 
@@ -701,7 +701,7 @@ const data = [
     title: "Titus(1 can)",
     description: "100% healthy and delicious.",
     price: "1199.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/titus_kckwcz.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856795/IMG_9078_xwxlgz.jpg",
     category: "Can Food",
   },
   {
