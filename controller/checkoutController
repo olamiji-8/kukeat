@@ -26,8 +26,8 @@ exports.checkout = async (req, res) => {
         await cartitem.save();
 
         sendCustomerEmail(email, fullname, cartItems, sumTotal);
-        sendCEONotification(fullname, email, phoneNumber, cartItems, address, city, state);
-        sendCONotification(fullname, email, phoneNumber, cartItems, address, city, state);
+        sendCEONotification(fullname, email, phoneNumber, cartItems, address, city, state, sumTotal);
+        sendCONotification(fullname, email, phoneNumber, cartItems, address, city, state, sumTotal);
 
         res.status(200).json({ message: 'Checkout process initiated successfully' });
     } catch (err) {
@@ -97,7 +97,7 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
 };
 
 // Function to send notification to the CEO
-const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
+const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state, sumTotal) => {
     const transporter = nodemailer.createTransport({
         host: 'server119-1.web-hosting.com',
         port: 465,
@@ -137,7 +137,7 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
 };
 
 // Function to send notification to the CO
-const sendCONotification = (fullname, email, phoneNumber, cartItems, address, city, state) => {
+const sendCONotification = (fullname, email, phoneNumber, cartItems, address, city, state, sumTotal) => {
     const transporter = nodemailer.createTransport({
         host: 'server119-1.web-hosting.com',
         port: 465,
