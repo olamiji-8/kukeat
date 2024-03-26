@@ -4,7 +4,7 @@ const data = [
     title: "Golden penny(pieces)",
     description: "Premium taste",
     price: "870.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856795/IMG_9076_bqqbm2.jpg",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4863_umidrb.jpg",
     category: "Pasta",
   },
 
@@ -13,7 +13,7 @@ const data = [
     title: "Golden penny(carton)",
     description: "Premium taste",
     price: "17299.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9081_eq3eii.jpg",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420863/kukeat/IMG_4862_a6jd1e.jpg",
     category: "Pasta",
   },
 
@@ -229,7 +229,7 @@ const data = [
     title: "Golden penny Semo(5Kg)",
     description: "Smooth Indulgence",
     price: "7400",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420853/kukeat/IMG_4871_cmsgwp.jpg",
     category: "Swallow",
   },
 
@@ -238,7 +238,7 @@ const data = [
     title: "Golden penny Semo(10Kg)",
     description: "Smooth Indulgence",
     price: "14700",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420852/kukeat/IMG_4872_vp1dns.jpg",
     category: "Swallow",
   },
 
@@ -400,7 +400,7 @@ const data = [
     title: "Drum(1 congo)",
     description: "Nutrient-Packed Legumes",
     price: "1899.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4883_xczfi9.jpg",
     category: "Beans",
   },
 
@@ -522,7 +522,7 @@ const data = [
     title: "indomitable (1 carton)",
     description: "The fastest fast-food",
     price: "9299.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/indominate_noodles_ip9f6l.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
     category: "Noodles",
   },
   // {
@@ -539,7 +539,7 @@ const data = [
     title: "onions chicken(1 carton)",
     description: "Variety just for you.",
     price: "10999.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/onion_chicken_uz95om.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
     category: "Noodles",
   },
 
@@ -701,7 +701,7 @@ const data = [
     title: "Titus(1 can)",
     description: "100% healthy and delicious.",
     price: "1199.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856795/IMG_9078_xwxlgz.jpg",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420858/kukeat/IMG_4867_nsv3sr.jpg",
     category: "Can Food",
   },
   {
@@ -709,7 +709,7 @@ const data = [
     title: "Titus(1 carton)",
     description: "100% healthy and delicious.",
     price: "11800",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Titus_carton_f1x3wr.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420860/kukeat/IMG_4865_hmzg6y.jpg",
     category: "Can Food",
   },
   {
@@ -845,7 +845,7 @@ const data = [
     title: "MyMy(1 pack)",
     description: "Every stick counts",
     price: "231",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/matches_g4bcgf.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420846/kukeat/IMG_4878_vc82by.jpg",
     category: "Matches",
   },
   // {
@@ -861,7 +861,7 @@ const data = [
     title: "White Garri(1 congo)",
     description: "The bond that joins us together",
     price: "1199.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/white_garri_sils5r.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420845/kukeat/IMG_4879_m8sbqk.jpg",
     category: "Garri",
   },
   {
@@ -869,7 +869,7 @@ const data = [
     title: "White Garri(10congos)",
     description: "The bond that joins us together",
     price: "11900",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/white_garri_sils5r.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420843/kukeat/IMG_4880_hxmdot.jpg",
     category: "Garri",
   },
   // {

@@ -4,7 +4,7 @@ const data = [
     title: "Golden penny(pieces)",
     description: "Premium taste",
     price: "870.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4863_umidrb.jpg",
     category: "Popular",
   },
 
@@ -21,7 +21,7 @@ const data = [
     title: "Dangote 250g(1 sachet)",
     description: "Sweet Delight",
     price: "519.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4864_ty6off.jpg",
     category: "Popular",
   },
   {
@@ -29,7 +29,7 @@ const data = [
     title: "indomitable(1 carton)",
     description: "The fastest fast-food",
     price: "9299.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/indominate_noodles_ip9f6l.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
     category: "Popular",
   },
   {
@@ -37,7 +37,7 @@ const data = [
     title: "Gino pepper and onions(1 roll)",
     description: "Perfect for stew and soup",
     price: "719.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4877_qw8m6m.jpg",
     category: "Top Sales",
   },
   
@@ -46,7 +46,7 @@ const data = [
     title: "Titus(1 can)",
     description: "100% healthy and delicious.",
     price: "1199.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/titus_kckwcz.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420858/kukeat/IMG_4867_nsv3sr.jpg",
     category: "Top Sales",
   },
   {
@@ -54,7 +54,7 @@ const data = [
     title: "MyMy(1 pack)",
     description: "Every stick counts",
     price: "231",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/matches_g4bcgf.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420846/kukeat/IMG_4878_vc82by.jpg",
     category: "Top Sales",
   },
   {
@@ -62,7 +62,7 @@ const data = [
     title: "White Garri(1 congo)",
     description: "The bond that joins us together",
     price: "1199.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/white_garri_sils5r.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420845/kukeat/IMG_4879_m8sbqk.jpg",
     category: "Top Sales",
   },
   {
@@ -120,7 +120,7 @@ const data = [
             title: "onions chicken(1 carton)",
             description: "Variety just for you.",
             price: "10999.99",
-            image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/onion_chicken_uz95om.png",
+            image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
             category: "Extra",
           },
               // {
@@ -145,7 +145,7 @@ const data = [
                 title: "Drum(1 congo)",
                 description: "Nutrient-Packed Legumes",
                 price: "1899.99",
-                image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
+                image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420843/kukeat/IMG_4882_w37kb7.jpg",
                 category: "Extra",
               },
               {
