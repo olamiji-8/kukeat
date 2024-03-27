@@ -31,7 +31,7 @@ const data = [
     title: "Crown(carton)",
     description: "100% Yummy",
     price: "14999.4",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582817/kukeat/CROWN-SPAG-600x283_dcfkko.png",
     category: "Pasta",
   },
 
@@ -293,7 +293,7 @@ const data = [
     title: "Devon’s King Oil(1 sachet)",
     description: "Culinary Excellence",
     price: "1999.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oil_ci3aye.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420849/kukeat/IMG_4874_yjesa5.jpg",
     category: "Oil",
   },
 
@@ -557,7 +557,7 @@ const data = [
     title: "Gino pepper and onions(1 roll)",
     description: "Perfect for stew and soup",
     price: "799.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4877_qw8m6m.jpg",
     category: "Tomato Paste",
   },
   {
@@ -621,7 +621,7 @@ const data = [
     title: "Gino( 1 roll)",
     description: "The must-add spice!",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/( 1 roll)_curry_ym7i9f.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582816/kukeat/1680897909_gino-gino-curry-herbs-spices-sachet-5g-10-sachets_gg7cni.jpg",
     category: "Curry",
   },
   // {

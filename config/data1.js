@@ -103,7 +103,7 @@ const data = [
             title: "Gino(1 roll)",
             description: "The must-add spice!",
             price: "774.97",
-            image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/Gino_curry_ym7i9f.png",
+            image:"hhttps://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582816/kukeat/1680897909_gino-gino-curry-herbs-spices-sachet-5g-10-sachets_gg7cni.jpg",
             category: "Extra",
           },
           
@@ -178,7 +178,7 @@ const data = [
                     title: "Crown(carton)",
                     description: "100% Yummy",
                     price: "14999.4",
-                    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
+                    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582817/kukeat/CROWN-SPAG-600x283_dcfkko.png",
                     category: "Extra",
                   },
                   {
