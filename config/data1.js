@@ -3,7 +3,7 @@ const data = [
     id: 1,
     title: "Golden penny Spaghetti (pieces)",
     description: "Premium taste",
-    price: "1099.99",
+    price: "999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4863_umidrb.jpg",
     category: "Popular",
   },
@@ -12,13 +12,13 @@ const data = [
     id: 2,
     title: "Crown Spaghetti (pieces)",
     description: "100% Yummy",
-    price: "999.99",
+    price: "899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
     category: "Popular",
   },
    {
     id: 3,
-    title: "Dangote 250g(1 sachet)",
+    title: "Dangote 250g (1 sachet)",
     description: "Sweet Delight",
     price: "800.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4864_ty6off.jpg",
@@ -26,9 +26,9 @@ const data = [
   },
   {
     id: 4,
-    title: "indomitable(1 carton)",
+    title: "indomitable (1 carton)",
     description: "The fastest fast-food",
-    price: "14999.99",
+    price: "10499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
     category: "Popular",
   },
@@ -62,8 +62,8 @@ const data = [
     title: "White Garri(1 congo)",
     description: "The bond that joins us together",
     price: "1099.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420845/kukeat/IMG_4879_m8sbqk.jpg",
-    category: "Top Sales",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908556/new%20kukeat/Garri_-_1_Congo_thxu5e.png",
+    category: "Garri",
   },
   {
     id: 9,
@@ -100,7 +100,7 @@ const data = [
           // },
           {
             id: 13,
-            title: "Gino(1 roll)",
+            title: "Gino Curry (1 roll)",
             description: "The must-add spice!",
             price: "774.97",
             image:"hhttps://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582816/kukeat/1680897909_gino-gino-curry-herbs-spices-sachet-5g-10-sachets_gg7cni.jpg",
@@ -109,7 +109,7 @@ const data = [
           
           {
             id: 14,
-            title: "Gino party jollof(1 roll)",
+            title: "Gino party jollof (1 roll)",
             description: "Spice up your jollof rice.",
             price: "950.99",
             image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
@@ -117,9 +117,9 @@ const data = [
           },
           {
             id: 15,
-            title: "onions chicken(1 carton)",
+            title: "onions chicken (1 carton)",
             description: "Variety just for you.",
-            price: "15999.99",
+            price: "11999.99",
             image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
             category: "Extra",
           },
@@ -133,7 +133,7 @@ const data = [
               // },
               {
                 id: 17,
-                title: "Pretty lady Rice(1 congo)",
+                title: "Pretty lady Rice (1 congo)",
                 description: "Made from the finest plantations",
                 price: "2659.99",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
@@ -142,7 +142,7 @@ const data = [
               
               {
                 id: 18,
-                title: "Drum(1 congo)",
+                title: "Drum (1 congo)",
                 description: "Nutrient-Packed Legumes",
                 price: "2499.99",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420843/kukeat/IMG_4882_w37kb7.jpg",
@@ -166,7 +166,7 @@ const data = [
                   // },
                   {
                     id: 21,
-                    title: "Golden penny Semo(1kg)",
+                    title: "Golden penny Semo (1kg)",
                     description: "Smooth Indulgence",
                     price: "1649.97",
                     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
@@ -183,7 +183,7 @@ const data = [
                   },
                   {
                     id: 23,
-                    title: "Honey beans(Ewa Oloyin)",
+                    title: "Honey beans (Ewa Oloyin)",
                     description: "Rich Legumes(1 congo)",
                     price: "2499.99",
                     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
@@ -198,5 +198,13 @@ const data = [
                       //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
                       //   category: "Extra",
                       // },
+                  {
+                    id: 24,
+                    title: "Groundnut Oil (1 bottle) 75cl",
+                    description: "Made for you",
+                    price: "1799.99",
+                    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w9_m5hfvy.jpg",
+                    category: "Extra",
+                  },
 ]
 module.exports = data;

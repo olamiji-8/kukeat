@@ -3,7 +3,7 @@ const data = [
     id: 1,
     title: "Golden penny Spaghetti(pieces)",
     description: "Premium taste",
-    price: "1099.99",
+    price: "999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4863_umidrb.jpg",
     category: "Pasta",
   },
@@ -21,7 +21,7 @@ const data = [
     id: 3,
     title: "Crown Spaghetti(pieces)",
     description: "100% Yummy",
-    price: "999.99",
+    price: "899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
     category: "Pasta",
   },
@@ -290,7 +290,7 @@ const data = [
 
   {
     id: 33,
-    title: "Devon’s King Oil(1 sachet)",
+    title: "Devon King's Oil (1 sachet)",
     description: "Culinary Excellence",
     price: "2299.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420849/kukeat/IMG_4874_yjesa5.jpg",
@@ -299,7 +299,7 @@ const data = [
 
   {
     id: 34,
-    title: "King’s oil(25ltrs)",
+    title: "King’s oil (25 ltrs)",
     description: "Culinary Excellence",
     price: "58000",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9080_aohuhq.webp",
@@ -308,7 +308,7 @@ const data = [
 
   {
     id: 35,
-    title: "Palm Oil (1 bottle)75cl",
+    title: "Palm Oil (1 bottle) 75cl",
     description: "Made from the finest oil plantations",
     price: "1599.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
@@ -320,7 +320,7 @@ const data = [
     title: "Palm Oil (5 litres)",
     description: "Made from the finest oil plantations",
     price: "10600",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091995/new%20kukeat/w2_zsvxxy.jpg",
     category: "Oil",
   },
 
@@ -329,7 +329,7 @@ const data = [
     title: "Palm Oil (10 litres)",
     description: "Made from the finest oil plantations",
     price: "21200",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w6_tuihmv.jpg",
     category: "Oil",
   },
 
@@ -382,7 +382,7 @@ const data = [
     title: "White beans(1 congo)",
     description: "Versatile Legumes",
     price: "1849.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
     category: "Beans",
   },
 
@@ -449,7 +449,7 @@ const data = [
   },
   {
     id: 51,
-    title: "Africa King(small seed)",
+    title: "Africa King (small seed)",
     description: "Small seeds, Big Flavour(1 congo)",
     price: "2659.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
@@ -461,7 +461,7 @@ const data = [
     title: "Africa King(small seed)",
     description: "Small seeds, Big Flavour (1 bag)",
     price: "75000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w11_i1id2c.jpg",
     category: "Rice",
   },
 
@@ -470,7 +470,7 @@ const data = [
     title: "Pretty lady Rice(1 congo)",
     description: "Made from the finest plantations",
     price: "2659.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
     category: "Rice",
   },
 
@@ -486,7 +486,7 @@ const data = [
     id: 55,
     title: "oriental(1 carton)",
     description: "Variety just for you.",
-    price: "14999.99",
+    price: "10499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
     category: "Noodles",
   },
@@ -521,7 +521,7 @@ const data = [
     id: 59,
     title: "indomitable (1 carton)",
     description: "The fastest fast-food",
-    price: "14999.99",
+    price: "10499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
     category: "Noodles",
   },
@@ -538,7 +538,7 @@ const data = [
     id: 61,
     title: "onions chicken(1 carton)",
     description: "Variety just for you.",
-    price: "15999.99",
+    price: "11999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
     category: "Noodles",
   },
@@ -618,20 +618,22 @@ const data = [
   },
   {
     id: 71,
-    title: "Gino( 1 roll)",
+    title: "Gino Curry( 1 roll)",
     description: "The must-add spice!",
     price: "774.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582816/kukeat/1680897909_gino-gino-curry-herbs-spices-sachet-5g-10-sachets_gg7cni.jpg",
-    category: "Curry",
+    category: "Spicies",
   },
+
   {
     id: 72,
     title: "Gino thyme(1 roll)",
     description: "Fragrant herb,savory flavor",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908452/new%20kukeat/Tiger_Thyme_z2lckg.png",
-    category: "Curry",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908547/new%20kukeat/Gino_Thyme_o2wux5.jpg",
+    category: "Spicies",
   },
+
   {
     id: 73,
     title: "Tasty cubes(1 sachet)",
@@ -758,7 +760,7 @@ const data = [
     description: "Peppery the way you like it.",
     price: "750.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/mom_pride_xbeezd.png",
-    category: "HOT PEPPER",
+    category: "Hot Pepper",
   },
   {
     id: 89,
@@ -888,6 +890,87 @@ const data = [
   //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
   //   category: "Garri",
   // },
+  {
+    id: 105,
+    title: "Spicity; stew and jollof (1 roll)",
+    description: "Spice your food",
+    price: "999.97",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w8_i6npdn.jpg",
+    category: "Spicies",
+  },
+
+  {
+    id: 106,
+    title: "Groundnut Oil (1 bottle) 75cl",
+    description: "Made for you",
+    price: "1799.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w9_m5hfvy.jpg",
+    category: "Oil",
+  },
+
+  {
+    id: 107,
+    title: "Big Eggs (1 crate)",
+    description: "Nutrient Booster",
+    price: "3999.79",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908553/new%20kukeat/Egg_nhejeu.png",
+    category: "Egg",
+  },
+
+  {
+    id: 108,
+    title: "Tiger thyme( 1 roll)",
+    description: "Fragrant herb,savory flavor",
+    price: "774.97",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908452/new%20kukeat/Tiger_Thyme_z2lckg.png",
+    category: "Spicies",
+  },
+
+  {
+    id: 109,
+    title: "Spicity; Fried Rice (1 roll)",
+    description: "Spice your food",
+    price: "999.97",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w10_rtjpsl.jpg",
+    category: "Spicies",
+  },
+
+  {
+    id: 110,
+    title: "Tiger Curry (1 roll)",
+    description: "Savory flavor",
+    price: "774.97",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w4_xvc8gc.jpg",
+    category: "Spicies",
+  },
+
+  {
+    id: 111,
+    title: "Golden penny Macaroni (pieces)",
+    description: "Premium taste",
+    price: "999.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w7_awmkg8.jpg",
+    category: "Pasta",
+  },
+
+  {
+    id: 112,
+    title: "King's Oil (25 ltrs)",
+    description: "Refined for you",
+    price: "58000",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w3_azwqtt.jpg",
+    category: "Oil",
+  },
+
+  {
+    id: 113,
+    title: "Golden penny Spaghettini (pieces)",
+    description: "Premium taste",
+    price: "1099.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091995/new%20kukeat/w5_xm5dc6.jpg",
+    category: "Pasta",
+  },
+
 
 ];
 
