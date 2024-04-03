@@ -30,7 +30,7 @@ const data = [
     id: 4,
     title: "Crown Spaghetti(carton)",
     description: "100% Yummy",
-    price: "15999.4",
+    price: "17499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908563/new%20kukeat/Crown_Spag_Carton_eix8hk.png",
     category: "Pasta",
   },
@@ -254,19 +254,19 @@ const data = [
 
   {
     id: 29,
-    title: "Golden penny wheat",
+    title: "Golden penny wheat (5kg)",
     description: "Nutrient Rich",
     price: "7250",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Golden_Penny_Goldenvita_5kg_xwwup1.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908521/new%20kukeat/Golden_Penny_Goldenvita_1kg_e2pl92.png",
     category: "Swallow",
   },
 
   {
     id: 30,
-    title: "Golden penny wheat",
+    title: "Golden penny wheat (10kg)",
     description: "Nutrient Rich",
     price: "14500",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908521/new%20kukeat/Golden_Penny_Goldenvita_1kg_e2pl92.png",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Golden_Penny_Goldenvita_5kg_xwwup1.png",
     category: "Swallow",
   },
 
@@ -302,7 +302,7 @@ const data = [
     title: "King’s oil (25 ltrs)",
     description: "Culinary Excellence",
     price: "58000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9080_aohuhq.webp",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w3_azwqtt.jpg",
     category: "Oil",
   },
 
@@ -363,7 +363,7 @@ const data = [
     id: 41,
     title: "Honey beans(Ewa Oloyin)",
     description: "Rich Legumes(1 congo)",
-    price: "2499.99",
+    price: "2699.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
     category: "Beans",
   },
@@ -381,7 +381,7 @@ const data = [
     id: 43,
     title: "White beans(1 congo)",
     description: "Versatile Legumes",
-    price: "1849.99",
+    price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
     category: "Beans",
   },
@@ -399,7 +399,7 @@ const data = [
     id: 45,
     title: "Drum(1 congo)",
     description: "Nutrient-Packed Legumes",
-    price: "2499.99",
+    price: "2699.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4883_xczfi9.jpg",
     category: "Beans",
   },
@@ -955,15 +955,6 @@ const data = [
 
   {
     id: 112,
-    title: "King's Oil (25 ltrs)",
-    description: "Refined for you",
-    price: "58000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w3_azwqtt.jpg",
-    category: "Oil",
-  },
-
-  {
-    id: 113,
     title: "Golden penny Spaghettini (pieces)",
     description: "Premium taste",
     price: "1099.99",

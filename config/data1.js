@@ -144,7 +144,7 @@ const data = [
                 id: 18,
                 title: "Drum (1 congo)",
                 description: "Nutrient-Packed Legumes",
-                price: "2499.99",
+                price: "2699.99",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420843/kukeat/IMG_4882_w37kb7.jpg",
                 category: "Extra",
               },
