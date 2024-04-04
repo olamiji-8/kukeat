@@ -84,9 +84,9 @@ const data = [
   },
   {
     id: 11,
-    title: "Maggi(1 sachet)",
+    title: "Maggi (1 sachet)",
     description: "Timeless Culinary Essence",
-    price: "600.99",
+    price: "609.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
     category: "Extra",
   },

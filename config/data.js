@@ -449,7 +449,7 @@ const data = [
   },
   {
     id: 51,
-    title: "Africa King (small seed)",
+    title: "Africa King Rice (small seed)",
     description: "Small seeds, Big Flavour(1 congo)",
     price: "2659.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
@@ -458,7 +458,7 @@ const data = [
 
   {
     id: 52,
-    title: "Africa King(small seed)",
+    title: "Africa King Rice (small seed)",
     description: "Small seeds, Big Flavour (1 bag)",
     price: "75000",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w11_i1id2c.jpg",
@@ -962,7 +962,23 @@ const data = [
     category: "Pasta",
   },
 
+  {
+    id: 113,
+    title: "Foreign Rice (small seed)",
+    description: "Small seeds, Big Flavour (1 congo)",
+    price: "3459.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712182686/new%20kukeat/w1_oh5exu.jpg",
+    category: "Rice",
+  },
 
+  {
+    id: 114,
+    title: "Maggi (1 sachet)",
+    description: "Timeless Culinary Essence",
+    price: "1499.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
+    category: "Seasoning Cube",
+  }
 ];
 
 module.exports = data;
