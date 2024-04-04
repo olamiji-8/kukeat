@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    title: "Golden penny Spaghetti(pieces)",
+    title: "Golden penny Spaghetti (pieces)",
     description: "Premium taste",
     price: "999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4863_umidrb.jpg",
@@ -10,7 +10,7 @@ const data = [
 
   {
     id: 2,
-    title: "Golden penny Spaghetti(carton)",
+    title: "Golden penny Spaghetti (carton)",
     description: "Premium taste",
     price: "18599.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908488/new%20kukeat/Golden_Spag_Carton_xibb9l.png",
@@ -19,7 +19,7 @@ const data = [
 
   {
     id: 3,
-    title: "Crown Spaghetti(pieces)",
+    title: "Crown Spaghetti (pieces)",
     description: "100% Yummy",
     price: "899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
@@ -28,7 +28,7 @@ const data = [
 
   {
     id: 4,
-    title: "Crown Spaghetti(carton)",
+    title: "Crown Spaghetti (carton)",
     description: "100% Yummy",
     price: "17499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908563/new%20kukeat/Crown_Spag_Carton_eix8hk.png",
@@ -217,7 +217,7 @@ const data = [
 
   {
     id: 25,
-    title: "Golden penny Semo(1Kg)",
+    title: "Golden penny Semo (1Kg)",
     description: "Smooth Indulgence",
     price: "1649.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
@@ -226,7 +226,7 @@ const data = [
 
   {
     id: 26,
-    title: "Golden penny Semo(5Kg)",
+    title: "Golden penny Semo (5Kg)",
     description: "Smooth Indulgence",
     price: "8200",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420853/kukeat/IMG_4871_cmsgwp.jpg",
@@ -235,7 +235,7 @@ const data = [
 
   {
     id: 27,
-    title: "Golden penny Semo(10Kg)",
+    title: "Golden penny Semo (10Kg)",
     description: "Smooth Indulgence",
     price: "16400",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420852/kukeat/IMG_4872_vp1dns.jpg",
@@ -361,8 +361,8 @@ const data = [
   // },
   {
     id: 41,
-    title: "Honey beans(Ewa Oloyin)",
-    description: "Rich Legumes(1 congo)",
+    title: "Honey beans (Ewa Oloyin)",
+    description: "Rich Legumes (1 congo)",
     price: "2699.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
     category: "Beans",
@@ -370,8 +370,8 @@ const data = [
 
   {
     id: 42,
-    title: "Honey beans(Ewa Oloyin)",
-    description: "Rich Legumes(1 bag)",
+    title: "Honey beans (Ewa Oloyin)",
+    description: "Rich Legumes (1 bag)",
     price: "68200",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908452/new%20kukeat/Honey_Beans_Bag_rush4x.png",
     category: "Beans",
@@ -379,7 +379,7 @@ const data = [
 
   {
     id: 43,
-    title: "White beans(1 congo)",
+    title: "White beans (1 congo)",
     description: "Versatile Legumes",
     price: "1899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
@@ -388,7 +388,7 @@ const data = [
 
   {
     id: 44,
-    title: "White beans(1 bag)",
+    title: "White beans (1 bag)",
     description: "Versatile Legumes",
     price: "125000",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908459/new%20kukeat/Sokoto_Beans_btx46t.png",
@@ -397,7 +397,7 @@ const data = [
 
   {
     id: 45,
-    title: "Drum(1 congo)",
+    title: "Drum (1 congo)",
     description: "Nutrient-Packed Legumes",
     price: "2699.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4883_xczfi9.jpg",
@@ -406,7 +406,7 @@ const data = [
 
   // {
   //   id: 46,
-  //   title: "Drum(1 congo)",
+  //   title: "Drum (1 congo)",
   //   description: "Nutrient-Packed Legumes",
   //   price: "1899.99",
   //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
@@ -432,7 +432,7 @@ const data = [
   // },
   {
     id: 49,
-    title: "Dangote 250g(1 sachet)",
+    title: "Dangote 250g (1 sachet)",
     description: "Sweet Delight",
     price: "800.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9074_j8nczg.jpg",
@@ -441,7 +441,7 @@ const data = [
 
   {
     id: 50,
-    title: "Dangote 500g(1 sachet)",
+    title: "Dangote 500g (1 sachet)",
     description: "Sweet Delight",
     price: "1500",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
@@ -484,7 +484,7 @@ const data = [
   },
   {
     id: 55,
-    title: "oriental(1 carton)",
+    title: "oriental (1 carton)",
     description: "Variety just for you.",
     price: "10499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
@@ -536,7 +536,7 @@ const data = [
 
   {
     id: 61,
-    title: "onions chicken(1 carton)",
+    title: "onions chicken (1 carton)",
     description: "Variety just for you.",
     price: "11999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
@@ -554,7 +554,7 @@ const data = [
 
   {
     id: 63,
-    title: "Gino pepper and onions(1 roll)",
+    title: "Gino pepper and onions (1 roll)",
     description: "Perfect for stew and soup",
     price: "899.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4877_qw8m6m.jpg",
@@ -562,7 +562,7 @@ const data = [
   },
   {
     id: 64,
-    title: "Gino pepper and onions(1 carton)",
+    title: "Gino pepper and onions (1 carton)",
     description: "Perfect for stew and soup",
     price: "8990",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/gino_cartoon_g70awt.png",
@@ -578,7 +578,7 @@ const data = [
   // },
   {
     id: 66,
-    title: "Gino tomato(1 roll)",
+    title: "Gino tomato (1 roll)",
     description: " 100% richness.",
     price: "829.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_paste_dif8qb.png",
@@ -586,7 +586,7 @@ const data = [
   },
   {
     id: 67,
-    title: "Gino tomato(1 carton)",
+    title: "Gino tomato (1 carton)",
     description: " 100% richness.",
     price: "8300",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_tomato_paste_jizr75.png",
@@ -602,7 +602,7 @@ const data = [
   // },
   {
     id: 69,
-    title: "Gino party jollof(1 roll)",
+    title: "Gino party jollof (1 roll)",
     description: "Spice up your jollof rice.",
     price: "950.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
@@ -610,7 +610,7 @@ const data = [
   },
   {
     id: 70,
-    title: "Gino party jollof(1 carton)",
+    title: "Gino party jollof (1 carton)",
     description: "Spice up your jollof rice.",
     price: "9500",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_party_jollof_cartoon_cdsctw.png",
@@ -618,7 +618,7 @@ const data = [
   },
   {
     id: 71,
-    title: "Gino Curry( 1 roll)",
+    title: "Gino Curry (1 roll)",
     description: "The must-add spice!",
     price: "774.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582816/kukeat/1680897909_gino-gino-curry-herbs-spices-sachet-5g-10-sachets_gg7cni.jpg",
@@ -627,7 +627,7 @@ const data = [
 
   {
     id: 72,
-    title: "Gino thyme(1 roll)",
+    title: "Gino thyme (1 roll)",
     description: "Fragrant herb,savory flavor",
     price: "774.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908547/new%20kukeat/Gino_Thyme_o2wux5.jpg",
@@ -636,7 +636,7 @@ const data = [
 
   {
     id: 73,
-    title: "Tasty cubes(1 sachet)",
+    title: "Tasty cubes (1 sachet)",
     description: "Sweet flavour",
     price: "609.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908408/new%20kukeat/Tasty_Cubes_chicken_flavour_tfaiwv.png",
@@ -660,8 +660,8 @@ const data = [
   // },
   {
     id: 76,
-    title: "Maggi(1 sachet)",
-    description: "Timeless Culinary Essence",
+    title: "Maggi (1 sachet)",
+    description: "Timeless Culinary Essence (20 pieces)",
     price: "609.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
     category: "Seasoning Cube",
@@ -684,23 +684,23 @@ const data = [
   // },
   {
     id: 79,
-    title: "Knorr(1 sachet)",
+    title: "Knorr (1 sachet)",
     description: "Makes your food taste 2x better.",
-    price: "619.99(12pcs)",
+    price: "619.99 (12pcs)",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908430/new%20kukeat/Knorr_12_pieces_kjp7no.jpg",
     category: "Seasoning Cube",
   },
   {
     id: 80,
-    title: "Knorr(1 sachet)",
+    title: "Knorr (1 sachet)",
     description: "Makes your food taste 2x better.",
-    price: "1699.99(45pcs)",
+    price: "1699.99 (45pcs)",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Knorr_45_pieces_jpmxek.png",
     category: "Seasoning Cube",
   },
   {
     id: 81,
-    title: "Titus(1 can)",
+    title: "Titus (1 can)",
     description: "100% healthy and delicious.",
     price: "1399.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420858/kukeat/IMG_4867_nsv3sr.jpg",
@@ -708,7 +708,7 @@ const data = [
   },
   {
     id: 82,
-    title: "Titus(1 carton)",
+    title: "Titus (1 carton)",
     description: "100% healthy and delicious.",
     price: "13800",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420860/kukeat/IMG_4865_hmzg6y.jpg",
@@ -716,7 +716,7 @@ const data = [
   },
   {
     id: 83,
-    title: "Geisha(1 can)",
+    title: "Geisha (1 can)",
     description: "",
     price: "950.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908554/new%20kukeat/Giesha_p326n7.png",
@@ -724,7 +724,7 @@ const data = [
   },
   {
     id: 84,
-    title: "Geisha(1 carton)",
+    title: "Geisha (1 carton)",
     description: "",
     price: "9500",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/Geisha_keejkz.png",
@@ -756,7 +756,7 @@ const data = [
   // },
   {
     id: 88,
-    title: "Mom's pride(1 roll)",
+    title: "Mom's pride (1 roll)",
     description: "Peppery the way you like it.",
     price: "750.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/mom_pride_xbeezd.png",
@@ -764,7 +764,7 @@ const data = [
   },
   {
     id: 89,
-    title: "Mr cheff(1 sachet)",
+    title: "Mr cheff (1 sachet)",
     description: "Queen of your food.",
     price: "200.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
@@ -772,7 +772,7 @@ const data = [
   },
   // {
   //   id: 90,
-  //   title: "Mr cheff(1 sachet)",
+  //   title: "Mr cheff (1 sachet)",
   //   description: "Queen of your food.",
   //   price: "150",
   //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
@@ -780,7 +780,7 @@ const data = [
   // },
   // {
   //   id: 91,
-  //   title: "Mr cheff(1 sachet)",
+  //   title: "Mr cheff (1 sachet)",
   //   description: "Queen of your food.",
   //   price: "150",
   //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
@@ -844,33 +844,33 @@ const data = [
   // },
   {
     id: 99,
-    title: "MyMy(1 pack)",
+    title: "MyMy (1 pack)",
     description: "Every stick counts",
-    price: "270",
+    price: "269.98",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420846/kukeat/IMG_4878_vc82by.jpg",
     category: "Igniter",
   },
   {
     id: 100,
-    title: "Lighter(1 piece)",
+    title: "Lighter (1 piece)",
     description: "Light your way with ease",
-    price: "250",
+    price: "249.97",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908405/new%20kukeat/Lighter_euwmps.png",
     category: "Igniter",
   },
   {
     id: 101,
-    title: "White Garri(1 congo)",
+    title: "White Garri (1 congo)",
     description: "The bond that joins us together",
-    price: "1099.99",
+    price: "1249.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908556/new%20kukeat/Garri_-_1_Congo_thxu5e.png",
     category: "Garri",
   },
   {
     id: 102,
-    title: "White Garri(10congos)",
+    title: "White Garri (10congos)",
     description: "The bond that joins us together",
-    price: "10999.99",
+    price: "12499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908552/new%20kukeat/Garri_-_10_Congo_wqrezv.png",
     category: "Garri",
   },
@@ -974,7 +974,7 @@ const data = [
   {
     id: 114,
     title: "Maggi (1 sachet)",
-    description: "Timeless Culinary Essence",
+    description: "Timeless Culinary Essence (100 pieces)",
     price: "1499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
     category: "Seasoning Cube",
