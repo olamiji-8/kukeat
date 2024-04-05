@@ -65,27 +65,26 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
     });
 
     // Construct the email message body with formatted cart items
-    let mailBody = `Dear ${fullname},\n\nThank you for your order, Our customer care would call you for <strong><span style="color: orange;">confirmation and delivery charges</span></strong>.\n\n Here are the details of your purchase:\n\n`;
-
+    let mailBody = `Dear ${fullname},<br/><br/>Thank you for your order, Our customer care would call you for <strong><span style="color: orange;">confirmation and delivery charges</span></strong>.<br/><br/> Here are the details of your purchase:<br/><br/>`;
 
     cartItems.forEach((item, index) => {
-        mailBody += `Item ${index + 1}:\n`;
-        mailBody += `Item Name: ${item.itemName}\n`;
-        mailBody += `Quantity: ${item.quantity}\n`;
-        mailBody += `Price: ${item.price}\n`;
-        mailBody += `Total Price: ${item.totalPrice}\n\n`;
+        mailBody += `Item ${index + 1}:<br/>`;
+        mailBody += `Item Name: ${item.itemName}<br/>`;
+        mailBody += `Quantity: ${item.quantity}<br/>`;
+        mailBody += `Price: ${item.price}<br/>`;
+        mailBody += `Total Price: ${item.totalPrice}<br/><br/>`;
     });
 
     // Append the sumTotal at the end of the email body
-    mailBody += `Sum Total: ${sumTotal}\n\n`;
+    mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
 
-    mailBody += 'Please let us know if you have any questions.\n\nBest regards,';
+    mailBody += 'Please let us know if you have any questions.<br/><br/>Best regards,';
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
         to: email,
         subject: 'Thank you for your order!',
-        text: mailBody
+        html: mailBody
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -96,6 +95,7 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
         }
     });
 };
+
 
 // Function to send notification to the CEO
 const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state, sumTotal) => {
