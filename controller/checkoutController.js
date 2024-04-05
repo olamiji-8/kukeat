@@ -65,7 +65,8 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
     });
 
     // Construct the email message body with formatted cart items
-    let mailBody = `Dear ${fullname},\n\nThank you for your order, Our customer care would call you for <strong>confirmation and delivery charges</strong>.\n\n Here are the details of your purchase:\n\n`;
+    let mailBody = `Dear ${fullname},\n\nThank you for your order, Our customer care would call you for <strong><span style="color: orange;">confirmation and delivery charges</span></strong>.\n\n Here are the details of your purchase:\n\n`;
+
 
     cartItems.forEach((item, index) => {
         mailBody += `Item ${index + 1}:\n`;
