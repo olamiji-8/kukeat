@@ -53,7 +53,7 @@ const formatCartItems = (cartItems) => {
 };
 
 // Function to send email to the customer
-const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
+const sendCustomerEmail = (email, fullname, cartItems, sumTotal, serviceFee) => {
     const transporter = nodemailer.createTransport({
         host: 'server119-1.web-hosting.com',
         port: 465,
@@ -75,7 +75,10 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal) => {
         mailBody += `Total Price: ${item.totalPrice}<br/><br/>`;
     });
 
-    // Append the sumTotal at the end of the email body
+    // Append the service fee before the sum total
+    mailBody += `Service Fee: ${serviceFee}<br/>`;
+
+    // Append the sum total provided by the frontend at the end of the email body
     mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
 
     mailBody += 'Please let us know if you have any questions.<br/><br/>Best regards,';
