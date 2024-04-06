@@ -6,7 +6,7 @@ const User = require('../models/checkoutModel');
 // Controller to handle adding items to the cart
 exports.checkout = async (req, res) => {
     try {
-        const { email, fullname, phoneNumber, address, city, state, cartItems, sumTotal } = req.body;
+        const { email, fullname, phoneNumber, address, city, state, cartItems, sumTotal,serviceFee } = req.body;
 
         let user = await User.findOne({ $or: [{ email }, { phoneNumber }] });
 
@@ -19,6 +19,9 @@ exports.checkout = async (req, res) => {
             user.city = city;
             user.state = state;
             user.phoneNumber = phoneNumber;
+            user.cartItems = cartItems;
+            user.sumTotal = sumTotal;
+            user.serviceFee = serviceFee; 
             await user.save();
         }
 
@@ -121,8 +124,14 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
         mailBody += `Total Price: ${item.totalPrice}\n\n`;
-        mailBody += `Sum Total: ${sumTotal}\n\n`;
     });
+
+    // Append the service fee before the sum total
+    mailBody += `Service Fee: ${serviceFee}<br/>`;
+
+    // Append the sum total provided by the frontend at the end of the email body
+    mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
+
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
@@ -161,8 +170,14 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
         mailBody += `Total Price: ${item.totalPrice}\n\n`;
-        mailBody += `Sum Total: ${sumTotal}\n\n`;
     });
+
+
+    // Append the service fee before the sum total
+    mailBody += `Service Fee: ${serviceFee}<br/>`;
+
+    // Append the sum total provided by the frontend at the end of the email body
+    mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
