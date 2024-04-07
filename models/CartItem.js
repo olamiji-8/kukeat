@@ -24,8 +24,10 @@ const cartItemSchema = new mongoose.Schema({
         price: Number,
         totalPrice: Number
     }],
-    serviceFee: Number 
+    serviceFee: Number, // Add serviceFee field
+    sumTotal: Number // Add sumTotal field
 });
 
 module.exports = mongoose.model('CartItem', cartItemSchema);
+
 
