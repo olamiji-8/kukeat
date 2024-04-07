@@ -23,8 +23,9 @@ const cartItemSchema = new mongoose.Schema({
         quantity: Number,
         price: Number,
         totalPrice: Number
-    }]
-
+    }],
+    serviceFee: Number 
 });
 
 module.exports = mongoose.model('CartItem', cartItemSchema);
+
