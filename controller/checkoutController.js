@@ -19,14 +19,21 @@ exports.checkout = async (req, res) => {
             user.city = city;
             user.state = state;
             user.phoneNumber = phoneNumber;
-            user.cartItems = cartItems;
-            user.sumTotal = sumTotal;
-            user.serviceFee = serviceFee; 
             await user.save();
         }
 
-        const cartitem = new CartItem({ userId: user._id, items: cartItems });
-        await cartitem.save();
+        // Check if a CartItem document already exists for the user
+        let cartItem = await CartItem.findOne({ userId: user._id });
+
+        if (!cartItem) {
+            cartItem = new CartItem({ userId: user._id, items: cartItems, serviceFee, sumTotal });
+        } else {
+            cartItem.items = cartItems;
+            cartItem.serviceFee = serviceFee;
+            cartItem.sumTotal = sumTotal;
+        }
+
+        await cartItem.save();
 
         sendCustomerEmail(email, fullname, cartItems, sumTotal, serviceFee);
         sendCEONotification(fullname, email, phoneNumber, cartItems, address, city, state, sumTotal, serviceFee);
@@ -34,11 +41,13 @@ exports.checkout = async (req, res) => {
 
         res.status(200).json({ message: 'Checkout process initiated successfully' });
     } catch (err) {
+        if (err.name === 'ValidationError') {
+            return res.status(400).json({ error: err.message });
+        }
         console.error(err);
-        res.status(500).json({ error: err.message || 'Server error' });
+        res.status(500).json({ error: 'Server error' });
     }
 };
-
 // Function to format cart items into a nice string for email
 const formatCartItems = (cartItems) => {
     let formattedItems = '';
@@ -67,11 +76,21 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal, serviceFee) => 
         }
     });
 
-    let mailBody = `Dear ${fullname},<br/><br/>Thank you for your order. Here are the details of your purchase:<br/><br/>`;
+    // Construct the email message body with formatted cart items
+    let mailBody = `Dear ${fullname},<br/><br/>Thank you for your order, Our customer care would call you for <strong><span style="color: orange;">confirmation and delivery charges</span></strong>.<br/><br/> Here are the details of your purchase:<br/><br/>`;
 
-    mailBody += formatCartItems(cartItems);
+    cartItems.forEach((item, index) => {
+        mailBody += `Item ${index + 1}:<br/>`;
+        mailBody += `Item Name: ${item.itemName}<br/>`;
+        mailBody += `Quantity: ${item.quantity}<br/>`;
+        mailBody += `Price: ${item.price}<br/>`;
+        mailBody += `Total Price: ${item.totalPrice}<br/><br/>`;
+    });
 
+    // Append the service fee before the sum total
     mailBody += `Service Fee: ${serviceFee}<br/>`;
+
+    // Append the sum total provided by the frontend at the end of the email body
     mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
 
     mailBody += 'Please let us know if you have any questions.<br/><br/>Best regards,';
@@ -92,16 +111,9 @@ const sendCustomerEmail = (email, fullname, cartItems, sumTotal, serviceFee) => 
     });
 };
 
+
 // Function to send notification to the CEO
 const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, city, state, sumTotal, serviceFee) => {
-    // Construct the email message body with formatted cart items
-    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nDelivery Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
-
-    mailBody += formatCartItems(cartItems);
-
-    mailBody += `Service Fee: ${serviceFee}<br/>`;
-    mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
-
     const transporter = nodemailer.createTransport({
         host: 'server119-1.web-hosting.com',
         port: 465,
@@ -111,6 +123,24 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
             pass: process.env.EMAIL_PASSWORD
         }
     });
+
+    // Construct the email message body with formatted cart items
+    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nDelivery Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
+
+    cartItems.forEach((item, index) => {
+        mailBody += `Item ${index + 1}:\n`;
+        mailBody += `Item Name: ${item.itemName}\n`;
+        mailBody += `Quantity: ${item.quantity}\n`;
+        mailBody += `Price: ${item.price}\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
+        mailBody += `Sum Total: ${sumTotal}\n\n`;
+    });
+
+    // Append the service fee before the sum total
+    mailBody += `Service Fee: ${serviceFee}<br/>`;
+
+    // Append the sum total provided by the frontend at the end of the email body
+    mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
@@ -128,16 +158,9 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
     });
 };
 
+
 // Function to send notification to the CO
 const sendCONotification = (fullname, email, phoneNumber, cartItems, address, city, state, sumTotal, serviceFee) => {
-    // Construct the email message body with formatted cart items
-    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nDelivery Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
-
-    mailBody += formatCartItems(cartItems);
-
-    mailBody += `Service Fee: ${serviceFee}<br/>`;
-    mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
-
     const transporter = nodemailer.createTransport({
         host: 'server119-1.web-hosting.com',
         port: 465,
@@ -147,6 +170,25 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
             pass: process.env.EMAIL_PASSWORD
         }
     });
+
+    // Construct the email message body with formatted cart items
+    let mailBody = `New order received!\n\nCustomer Details:\nName: ${fullname}\nEmail: ${email}\nPhone Number: ${phoneNumber}\n\nDelivery Address:\n${address}\n${city}, ${state}\n\nOrdered Items:\n`;
+
+    cartItems.forEach((item, index) => {
+        mailBody += `Item ${index + 1}:\n`;
+        mailBody += `Item Name: ${item.itemName}\n`;
+        mailBody += `Quantity: ${item.quantity}\n`;
+        mailBody += `Price: ${item.price}\n`;
+        mailBody += `Total Price: ${item.totalPrice}\n\n`;
+        mailBody += `Sum Total: ${sumTotal}\n\n`;
+    });
+
+      // Append the service fee before the sum total
+      mailBody += `Service Fee: ${serviceFee}<br/>`;
+
+      // Append the sum total provided by the frontend at the end of the email body
+      mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
+      
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
@@ -167,7 +209,7 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
 // Controller to handle adding items to the cart
 exports.addItemToCart = async (req, res) => {
     try {
-        const { itemName, quantity, price, totalPrice, sumTotal } = req.body;
+        const { itemName, quantity, price, totalPrice , sumTotal} = req.body;
 
         // Create a new cart item
         const newItem = new CartItem({
@@ -184,6 +226,6 @@ exports.addItemToCart = async (req, res) => {
         res.status(201).json({ message: 'Item added to cart successfully', newItem });
     } catch (err) {
         console.error(err);
-        res.status(500).json({ error: err.message || 'Server error' });
+        res.status(500).json({ error: 'Server error' });
     }
 };
