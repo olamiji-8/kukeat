@@ -136,11 +136,14 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
         mailBody += `Sum Total: ${sumTotal}\n\n`;
     });
 
-    // Append the service fee before the sum total
-    mailBody += `Service Fee: ${serviceFee}<br/>`;
+// Append the service fee before the sum total
+mailBody += `Service Fee: ${serviceFee}\n`;
 
-    // Append the sum total provided by the frontend at the end of the email body
-    mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
+// Append the sum total provided by the frontend at the end of the email body
+mailBody += `Sum Total: ${sumTotal}\n\n`;
+
+
+    
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
@@ -183,12 +186,12 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
         mailBody += `Sum Total: ${sumTotal}\n\n`;
     });
 
-      // Append the service fee before the sum total
-      mailBody += `Service Fee: ${serviceFee}<br/>`;
+// Append the service fee before the sum total
+mailBody += `Service Fee: ${serviceFee}\n`;
 
-      // Append the sum total provided by the frontend at the end of the email body
-      mailBody += `Sum Total: ${sumTotal}<br/><br/>`;
-      
+// Append the sum total provided by the frontend at the end of the email body
+mailBody += `Sum Total: ${sumTotal}\n\n`;
+
 
     const mailOptions = {
         from: '"Kukeat" <info@kukeat.com>',
