@@ -133,7 +133,6 @@ const sendCEONotification = (fullname, email, phoneNumber, cartItems, address, c
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
         mailBody += `Total Price: ${item.totalPrice}\n\n`;
-        mailBody += `Sum Total: ${sumTotal}\n\n`;
     });
 
 // Append the service fee before the sum total
@@ -183,7 +182,6 @@ const sendCONotification = (fullname, email, phoneNumber, cartItems, address, ci
         mailBody += `Quantity: ${item.quantity}\n`;
         mailBody += `Price: ${item.price}\n`;
         mailBody += `Total Price: ${item.totalPrice}\n\n`;
-        mailBody += `Sum Total: ${sumTotal}\n\n`;
     });
 
 // Append the service fee before the sum total
