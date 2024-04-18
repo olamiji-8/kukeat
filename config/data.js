@@ -363,7 +363,7 @@ const data = [
     id: 41,
     title: "Honey beans (Ewa Oloyin)",
     description: "Rich Legumes (1 congo)",
-    price: "2699.99",
+    price: "2999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
     category: "Beans",
   },
@@ -381,7 +381,7 @@ const data = [
     id: 43,
     title: "White beans (1 congo)",
     description: "Versatile Legumes",
-    price: "1899.99",
+    price: "1999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
     category: "Beans",
   },
@@ -399,7 +399,7 @@ const data = [
     id: 45,
     title: "Drum (1 congo)",
     description: "Nutrient-Packed Legumes",
-    price: "2699.99",
+    price: "2999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4883_xczfi9.jpg",
     category: "Beans",
   },
@@ -432,7 +432,7 @@ const data = [
   // },
   {
     id: 49,
-    title: "Dangote 250g (1 sachet)",
+    title: "Dangote Sugar 250g (1 sachet)",
     description: "Sweet Delight",
     price: "800.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9074_j8nczg.jpg",
@@ -441,7 +441,7 @@ const data = [
 
   {
     id: 50,
-    title: "Dangote 500g (1 sachet)",
+    title: "Dangote Sugar 500g (1 sachet)",
     description: "Sweet Delight",
     price: "1500",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
@@ -451,7 +451,7 @@ const data = [
     id: 51,
     title: "Africa King Rice (small seed)",
     description: "Small seeds, Big Flavour(1 congo)",
-    price: "2659.99",
+    price: "2799.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
     category: "Rice",
   },
@@ -469,7 +469,7 @@ const data = [
     id: 53,
     title: "Pretty lady Rice(1 congo)",
     description: "Made from the finest plantations",
-    price: "2659.99",
+    price: "2799.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
     category: "Rice",
   },
@@ -484,7 +484,7 @@ const data = [
   },
   {
     id: 55,
-    title: "oriental (1 carton)",
+    title: "Oriental (1 carton)",
     description: "Variety just for you.",
     price: "10499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
@@ -519,7 +519,7 @@ const data = [
 
   {
     id: 59,
-    title: "indomitable (1 carton)",
+    title: "Indomitable (1 carton)",
     description: "The fastest fast-food",
     price: "10499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
@@ -536,7 +536,7 @@ const data = [
 
   {
     id: 61,
-    title: "onions chicken (1 carton)",
+    title: "Onions chicken (1 carton)",
     description: "Variety just for you.",
     price: "11999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
@@ -978,6 +978,33 @@ const data = [
     price: "1499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
     category: "Seasoning Cube",
+  },
+
+  {
+    id: 115,
+    title: "Oriental (1/2 carton)",
+    description: "Variety just for you.",
+    price: "5249.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
+    category: "Noodles",
+  },
+
+  {
+    id: 116,
+    title: "Indomitable (1/2 carton)",
+    description: "The fastest fast-food",
+    price: "5249.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
+    category: "Noodles",
+  },
+
+  {
+    id: 117,
+    title: "Onions Chicken (1/2 carton)",
+    description: "Variety just for you.",
+    price: "5999.99",
+    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
+    category: "Noodles",
   }
 ];
 

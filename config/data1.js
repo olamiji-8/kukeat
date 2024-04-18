@@ -18,7 +18,7 @@ const data = [
   },
    {
     id: 3,
-    title: "Dangote 250g (1 sachet)",
+    title: "Dangote Sugar 250g (1 sachet)",
     description: "Sweet Delight",
     price: "800.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4864_ty6off.jpg",
@@ -115,9 +115,10 @@ const data = [
             image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
             category: "Extra",
           },
+          
           {
             id: 15,
-            title: "onions chicken (1 carton)",
+            title: "Onions chicken (1 carton)",
             description: "Variety just for you.",
             price: "11999.99",
             image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
@@ -135,7 +136,7 @@ const data = [
                 id: 17,
                 title: "Pretty lady Rice (1 congo)",
                 description: "Made from the finest plantations",
-                price: "2659.99",
+                price: "2799.99",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
                 category: "Extra",
               },
@@ -144,10 +145,11 @@ const data = [
                 id: 18,
                 title: "Drum (1 congo)",
                 description: "Nutrient-Packed Legumes",
-                price: "2699.99",
+                price: "2999.99",
                 image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420843/kukeat/IMG_4882_w37kb7.jpg",
                 category: "Extra",
               },
+
               {
                 id: 19,
                 title: "Palm Oil(1 bottle) 75cl",
@@ -185,7 +187,7 @@ const data = [
                     id: 23,
                     title: "Honey beans (Ewa Oloyin)",
                     description: "Rich Legumes(1 congo)",
-                    price: "2499.99",
+                    price: "2999.99",
                     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
                     category: "Extra",
                   },
