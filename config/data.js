@@ -978,7 +978,7 @@ const data = [
     price: "1499.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
     category: "Seasoning Cube",
-  }
+  },
 
   {
     id: 115,
@@ -1005,7 +1005,7 @@ const data = [
     price: "5999.99",
     image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
     category: "Noodles",
-  }
+  },
   {
     id: 118,
     title: "Tiger Ginger Powder (1 roll)",
