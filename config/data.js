@@ -4,296 +4,145 @@ const data = [
     title: "Golden penny Spaghetti (pieces)",
     description: "Premium taste",
     price: "999.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4863_umidrb.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420862/kukeat/IMG_4863_umidrb.jpg",
     category: "Pasta",
   },
-
   {
     id: 2,
     title: "Golden penny Spaghetti (carton)",
     description: "Premium taste",
     price: "19999.79",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908488/new%20kukeat/Golden_Spag_Carton_xibb9l.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908488/new%20kukeat/Golden_Spag_Carton_xibb9l.png",
     category: "Pasta",
   },
-
   {
     id: 3,
     title: "Crown Spaghetti (pieces)",
     description: "100% Yummy",
     price: "929.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/crown_darxvb.png",
     category: "Pasta",
   },
-
   {
     id: 4,
     title: "Crown Spaghetti (carton)",
     description: "100% Yummy",
     price: "18599.79",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908563/new%20kukeat/Crown_Spag_Carton_eix8hk.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908563/new%20kukeat/Crown_Spag_Carton_eix8hk.png",
     category: "Pasta",
   },
-
-  // {
-  //   id: 5,
-  //   title: "Slim Golden penny(pieces)",
-  //   description: "Sweet delight and served in minutes",
-  //   price: "",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
-  //   category: "Pasta",
-  // },
-
-  // {
-  //   id: 6,
-  //   title: "Slim Golden penny",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-  //   category: "Pasta",
-  // },
-
-  // {
-  //   id: 7,
-  //   title: "Crown",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Pasta",
-  // },
-
-  // {
-  //   id: 8,
-  //   title: "Slim Golden penny",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-
-  //   category: "Pasta",
-  // },
-
-  // {
-  //   id: 9,
-  //   title: "Golden Penny Twist",
-  //   description: "Crunchy, golden snack",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908462/new%20kukeat/Golden_Penny_Twist_ncujb2.png",
-  //   category: "Pasta",
-  // },
-
-  // {
-  //   id: 10,
-  //   title: "Golden Penny Noodles",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-  //   category: "Groceries",
-  // },
-
-  // {
-  //   id: 11,
-  //   title: "Golden Penny Noodles",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Groceries",
-  // },
-
-  // {
-  //   id: 12,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Groceries",
-  // },
-
-  // {
-  //   id: 13,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
-  //   category: "Groceries",
-  // },
-
-  // {
-  //   id: 14,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-  //   category: "Groceries",
-  // },
-
-  // {
-  //   id: 15,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Groceries",
-  // },
-
-  // {
-  //   id: 16,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Groceries",
-  // },
-
-  // {
-  //   id: 17,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
-  //   category: "Beverages",
-  // },
-
-  // {
-  //   id: 18,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-  //   category: "Beverages",
-  // },
-
-  // {
-  //   id: 19,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Beverages",
-  // },
-
-  // {
-  //   id: 20,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Beverages",
-  // },
-
-  // {
-  //   id: 21,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055137/dyayctijvjplnsoz1v77.png",
-  //   category: "Beverages",
-  // },
-
-  // {
-  //   id: 22,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-  //   category: "Beverages",
-  // },
-
-  // {
-  //   id: 23,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Beverages",
-  // },
-
-  // {
-  //   id: 24,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Beverages",
-  // },
-
   {
-    id: 25,
-    title: "Golden penny Semo (1Kg)",
-    description: "Smooth Indulgence",
+    id: 5,
+    title: "Golden Penny Semo",
+    description: "Smooth Indulgence (1Kg)",
     price: "1649.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
+    category: "Swallow",
+  },
+  {
+    id: 5,
+    title: "Golden Penny Semo",
+    description: "Smooth Indulgence (2.5Kg)",
+    price: "4199.97",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714736772/new%20kukeat/semo1_h1edfx.jpg",
+    category: "Swallow",
+  },
+  {
+    id: 6,
+    title: "Golden Penny Semo",
+    description: "Smooth Indulgence (5Kg)",
+    price: "8199.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420853/kukeat/IMG_4871_cmsgwp.jpg",
     category: "Swallow",
   },
 
   {
-    id: 26,
-    title: "Golden penny Semo (5Kg)",
-    description: "Smooth Indulgence",
-    price: "8200",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420853/kukeat/IMG_4871_cmsgwp.jpg",
-    category: "Swallow",
-  },
-
-  {
-    id: 27,
-    title: "Golden penny Semo (10Kg)",
-    description: "Smooth Indulgence",
+    id: 7,
+    title: "Golden Penny Semo",
+    description: "Smooth Indulgence (10Kg)",
     price: "16400",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420852/kukeat/IMG_4872_vp1dns.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420852/kukeat/IMG_4872_vp1dns.jpg",
+    category: "Swallow",
+  },
+  {
+    id: 14,
+    title: "Golden Penny Wheat",
+    description: "Nutrient Rich (1kg)",
+    price: "1499.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908521/new%20kukeat/Golden_Penny_Goldenvita_1kg_e2pl92.png",
+    category: "Swallow",
+  },
+  {
+    id: 8,
+    title: "Golden Penny Wheat",
+    description: "Nutrient Rich (2.5kg)",
+    price: "3799.97",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714737063/new%20kukeat/Gold1_ckei72.jpg",
+    category: "Swallow",
+  },
+  {
+    id: 9,
+    title: "Golden Penny Wheat",
+    description: "Nutrient Rich (5kg)",
+    price: "7249.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908521/new%20kukeat/Golden_Penny_Goldenvita_1kg_e2pl92.png",
     category: "Swallow",
   },
 
-
-  // {
-  //   id: 28,
-  //   title: "Golden penny Semo",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Golden_penny_semo_fyevzg.png",
-  //   category: "Swallow",
-  // },
-
   {
-    id: 29,
-    title: "Golden penny wheat (5kg)",
-    description: "Nutrient Rich",
-    price: "7250",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908521/new%20kukeat/Golden_Penny_Goldenvita_1kg_e2pl92.png",
-    category: "Swallow",
-  },
-
-  {
-    id: 30,
-    title: "Golden penny wheat (10kg)",
-    description: "Nutrient Rich",
+    id: 10,
+    title: "Golden Penny Wheat",
+    description: "Nutrient Rich (10kg)",
     price: "14500",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Golden_Penny_Goldenvita_5kg_xwwup1.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Golden_Penny_Goldenvita_5kg_xwwup1.png",
     category: "Swallow",
   },
-
-  // {
-  //   id: 31,
-  //   title: "Golden penny wheat",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "600",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Swallow",
-  // },
-
-  // {
-  //   id: 32,
-  //   title: "Golden penny wheat",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Swallow",
-  // },
-
+  {
+    id: 11,
+    title: "Oriental (1/4 carton)",
+    description: "Variety just for you.",
+    price: "2299.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714736773/new%20kukeat/Oriental1_rl9fbb.jpg",
+    category: "Noodles",
+  },
+  {
+    id: 12,
+    title: "Indomitable (1/4 carton)",
+    description: "The fastest fast-food",
+    price: "2299.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714736772/new%20kukeat/Indomine1_srpdgq.jpg",
+    category: "Noodles",
+  },
+  {
+    id: 13,
+    title: "Onions Chicken (1/4 carton)",
+    description: "Variety just for you.",
+    price: "2699.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714736773/new%20kukeat/Onion1_rdh5hd.jpg",
+    category: "Noodles",
+  },
   {
     id: 33,
     title: "Devon King's Oil (1 sachet)",
     description: "Culinary Excellence",
     price: "2299.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420849/kukeat/IMG_4874_yjesa5.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420849/kukeat/IMG_4874_yjesa5.jpg",
     category: "Oil",
   },
 
@@ -302,7 +151,8 @@ const data = [
     title: "King’s oil (25 ltrs)",
     description: "Culinary Excellence",
     price: "58000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w3_azwqtt.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w3_azwqtt.jpg",
     category: "Oil",
   },
 
@@ -311,7 +161,8 @@ const data = [
     title: "Palm Oil (1 bottle) 75cl",
     description: "Made from the finest oil plantations",
     price: "1599.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
     category: "Oil",
   },
 
@@ -320,7 +171,8 @@ const data = [
     title: "Palm Oil (5 litres)",
     description: "Made from the finest oil plantations",
     price: "10600",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091995/new%20kukeat/w2_zsvxxy.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091995/new%20kukeat/w2_zsvxxy.jpg",
     category: "Oil",
   },
 
@@ -329,42 +181,18 @@ const data = [
     title: "Palm Oil (10 litres)",
     description: "Made from the finest oil plantations",
     price: "21200",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w6_tuihmv.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w6_tuihmv.jpg",
     category: "Oil",
   },
 
-  // {
-  //   id: 38,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/y3hswtjim8ucs1sktert.png",
-  //   category: "Oil",
-  // },
-
-  // {
-  //   id: 39,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Oil",
-  // },
-
-  // {
-  //   id: 40,
-  //   title: "Golden Penny Twist",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Oil",
-  // },
   {
     id: 41,
     title: "Honey beans (Ewa Oloyin)",
     description: "Rich Legumes (1 congo)",
     price: "3199.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
     category: "Beans",
   },
 
@@ -372,8 +200,9 @@ const data = [
     id: 42,
     title: "Honey beans (Ewa Oloyin)",
     description: "Rich Legumes (1 bag)",
-    price: "68200",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908452/new%20kukeat/Honey_Beans_Bag_rush4x.png",
+    price: "105000",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908452/new%20kukeat/Honey_Beans_Bag_rush4x.png",
     category: "Beans",
   },
 
@@ -381,8 +210,9 @@ const data = [
     id: 43,
     title: "White beans (1 congo)",
     description: "Versatile Legumes",
-    price: "1999.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
+    price: "2199.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
     category: "Beans",
   },
 
@@ -390,8 +220,9 @@ const data = [
     id: 44,
     title: "White beans (1 bag)",
     description: "Versatile Legumes",
-    price: "125000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908459/new%20kukeat/Sokoto_Beans_btx46t.png",
+    price: "150000",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908459/new%20kukeat/Sokoto_Beans_btx46t.png",
     category: "Beans",
   },
 
@@ -400,42 +231,17 @@ const data = [
     title: "Drum (1 congo)",
     description: "Nutrient-Packed Legumes",
     price: "3199.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4883_xczfi9.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4883_xczfi9.jpg",
     category: "Beans",
   },
-
-  // {
-  //   id: 46,
-  //   title: "Drum (1 congo)",
-  //   description: "Nutrient-Packed Legumes",
-  //   price: "1899.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Drumbeans_ejoz2f.png",
-  //   category: "Beans",
-  // },
-
-  // {
-  //   id: 47,
-  //   title: "Palm oil",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "900",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/uemknao2yx2yiipqr5it.png",
-  //   category: "Beans",
-  // },
-
-  // {
-  //   id: 48,
-  //   title: "Palm oil",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Beans",
-  // },
   {
     id: 49,
     title: "Dangote Sugar 250g (1 sachet)",
     description: "Sweet Delight",
     price: "800.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9074_j8nczg.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1710856794/IMG_9074_j8nczg.jpg",
     category: "Sugar",
   },
 
@@ -444,7 +250,8 @@ const data = [
     title: "Dangote Sugar 500g (1 sachet)",
     description: "Sweet Delight",
     price: "1500",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Dangote_salt_xpo84k.png",
     category: "Sugar",
   },
   {
@@ -452,7 +259,8 @@ const data = [
     title: "Africa King Rice (small seed)",
     description: "Small seeds, Big Flavour(1 congo)",
     price: "2799.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
     category: "Rice",
   },
 
@@ -461,16 +269,18 @@ const data = [
     title: "Africa King Rice (small seed)",
     description: "Small seeds, Big Flavour (1 bag)",
     price: "75000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w11_i1id2c.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w11_i1id2c.jpg",
     category: "Rice",
   },
 
   {
     id: 53,
-    title: "Pretty lady Rice(1 congo)",
+    title: "Pretty lady Rice (1 congo)",
     description: "Made from the finest plantations",
     price: "2799.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
     category: "Rice",
   },
 
@@ -479,85 +289,46 @@ const data = [
     title: "Pretty lady Rice (1 bag)",
     description: "Made from the finest plantations",
     price: "75000",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
     category: "Rice",
   },
   {
     id: 55,
     title: "Oriental (1 carton)",
     description: "Variety just for you.",
-    price: "10499.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
+    price: "8999.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
     category: "Noodles",
   },
-
-  // {
-  //   id: 56,
-  //   title: "oriental(1 carton)",
-  //   description: "Variety just for you.",
-  //   price: "9299.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oriental_noodles_k18txd.png",
-  //   category: "Noodles",
-  // },
-
-  // {
-  //   id: 57,
-  //   title: "Indomie",
-  //   description: "",
-  //   price: "",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/noodles_dyodvq.png",
-  //   category: "Noodles",
-  // },
-  // {
-  //   id: 58,Golden penny(pieces)
-  //   title: "Indomie",
-  //   description: "",
-  //   price: "",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/noodles_dyodvq.png",
-  //   category: "Noodles",
-  // },
 
   {
     id: 59,
     title: "Indomitable (1 carton)",
     description: "The fastest fast-food",
-    price: "10499.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
+    price: "8999.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
     category: "Noodles",
   },
-  // {
-  //   id: 60,
-  //   title: "indomitable (1 carton)",
-  //   description: "The fastest fast-food",
-  //   price: "5899.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/indominate_noodles_ip9f6l.png",
-  //   category: "Noodles",
-  // },
-
   {
     id: 61,
     title: "Onions chicken (1 carton)",
     description: "Variety just for you.",
-    price: "11999.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
+    price: "10499.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
     category: "Noodles",
   },
-
-  // {
-  //   id: 62,
-  //   title: "onions chicken(1 carton)",
-  //   description: "Variety just for you.",
-  //   price: "6299.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/onion_chicken_uz95om.png",
-  //   category: "Noodles",
-  // },
 
   {
     id: 63,
     title: "Gino pepper and onions (1 roll)",
     description: "Perfect for stew and soup",
     price: "899.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4877_qw8m6m.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4877_qw8m6m.jpg",
     category: "Tomato Paste",
   },
   {
@@ -565,23 +336,17 @@ const data = [
     title: "Gino pepper and onions (1 carton)",
     description: "Perfect for stew and soup",
     price: "8990",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/gino_cartoon_g70awt.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/gino_cartoon_g70awt.png",
     category: "Tomato Paste",
   },
-  // {
-  //   id: 65,
-  //   title: "Gino pepper and onions(1 roll)",
-  //   description: "Perfect for stew and soup",
-  //   price: "649.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/Gino_peper_wtajhw.png",
-  //   category: "Tomato Paste",
-  // },
   {
     id: 66,
     title: "Gino tomato (1 roll)",
     description: " 100% richness.",
     price: "829.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_paste_dif8qb.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_paste_dif8qb.png",
     category: "Tomato Paste",
   },
   {
@@ -589,23 +354,17 @@ const data = [
     title: "Gino tomato (1 carton)",
     description: " 100% richness.",
     price: "8300",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_tomato_paste_jizr75.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_tomato_paste_jizr75.png",
     category: "Tomato Paste",
   },
-  // {
-  //   id: 68,
-  //   title: "Gino party jollof(1 roll)",
-  //   description: "Spice up your jollof rice.",
-  //   price: "680",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
-  //   category: "Tomato Paste",
-  // },
   {
     id: 69,
     title: "Gino party jollof (1 roll)",
     description: "Spice up your jollof rice.",
     price: "950.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Gino_part_jollof_qbq9ti.png",
     category: "Tomato Paste",
   },
   {
@@ -613,7 +372,8 @@ const data = [
     title: "Gino party jollof (1 carton)",
     description: "Spice up your jollof rice.",
     price: "9500",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_party_jollof_cartoon_cdsctw.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1709769608/Gino_party_jollof_cartoon_cdsctw.png",
     category: "Tomato Paste",
   },
   {
@@ -621,7 +381,8 @@ const data = [
     title: "Gino Curry (1 roll)",
     description: "The must-add spice!",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582816/kukeat/1680897909_gino-gino-curry-herbs-spices-sachet-5g-10-sachets_gg7cni.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711582816/kukeat/1680897909_gino-gino-curry-herbs-spices-sachet-5g-10-sachets_gg7cni.jpg",
     category: "Spicies",
   },
 
@@ -630,7 +391,8 @@ const data = [
     title: "Gino thyme (1 roll)",
     description: "Fragrant herb,savory flavor",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908547/new%20kukeat/Gino_Thyme_o2wux5.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908547/new%20kukeat/Gino_Thyme_o2wux5.jpg",
     category: "Spicies",
   },
 
@@ -639,55 +401,26 @@ const data = [
     title: "Tasty cubes (1 sachet)",
     description: "Sweet flavour (25 pieces)",
     price: "629.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908408/new%20kukeat/Tasty_Cubes_chicken_flavour_tfaiwv.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908408/new%20kukeat/Tasty_Cubes_chicken_flavour_tfaiwv.png",
     category: "Seasoning Cube",
   },
-  // {
-  //   id: 74,
-  //   title: "Tasty cubes(1 sachet)",
-  //   description: "Sweet flavour",
-  //   price: "359.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/magi_ltcq2g.png",
-  //   category: "Seasoning Cube",
-  // },
-  // {
-  //   id: 75,
-  //   title: "Tasty cubes(1 sachet)",
-  //   description: "Sweet flavour",
-  //   price: "359.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/magi_ltcq2g.png",
-  //   category: "Seasoning Cube",
-  // },
   {
     id: 76,
     title: "Maggi (1 sachet)",
     description: "Timeless Culinary Essence (20 pieces)",
     price: "619.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
     category: "Seasoning Cube",
   },
-  // {
-  //   id: 77,
-  //   title: "Maggi(1 sachet)",
-  //   description: "Timeless Culinary Essence",
-  //   price: "400",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/maggi_seasoning_fx5tvv.png",
-  //   category: "Seasoning Cube",
-  // },
-  // {
-  //   id: 78,
-  //   title: "Knorr(1 sachet)",
-  //   description: "Makes your food taste 2x better.",
-  //   price: "450(12pcs)",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Knorr_45_pieces_jpmxek.png",
-  //   category: "Seasoning Cube",
-  // },
   {
     id: 79,
     title: "Knorr (1 sachet)",
     description: "Makes your food taste 2x better (12 pieces)",
     price: "609.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908430/new%20kukeat/Knorr_12_pieces_kjp7no.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908430/new%20kukeat/Knorr_12_pieces_kjp7no.jpg",
     category: "Seasoning Cube",
   },
   {
@@ -695,7 +428,8 @@ const data = [
     title: "Knorr (1 sachet)",
     description: "Makes your food taste 2x better (45 pieces)",
     price: "1699.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Knorr_45_pieces_jpmxek.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Knorr_45_pieces_jpmxek.png",
     category: "Seasoning Cube",
   },
   {
@@ -703,7 +437,8 @@ const data = [
     title: "Titus (1 can)",
     description: "100% healthy and delicious.",
     price: "1399.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420858/kukeat/IMG_4867_nsv3sr.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420858/kukeat/IMG_4867_nsv3sr.jpg",
     category: "Can Food",
   },
   {
@@ -711,7 +446,8 @@ const data = [
     title: "Titus (1 carton)",
     description: "100% healthy and delicious.",
     price: "13800",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420860/kukeat/IMG_4865_hmzg6y.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420860/kukeat/IMG_4865_hmzg6y.jpg",
     category: "Can Food",
   },
   {
@@ -719,7 +455,8 @@ const data = [
     title: "Geisha (1 can)",
     description: "",
     price: "950.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908554/new%20kukeat/Giesha_p326n7.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908554/new%20kukeat/Giesha_p326n7.png",
     category: "Can Food",
   },
   {
@@ -727,39 +464,17 @@ const data = [
     title: "Geisha (1 carton)",
     description: "",
     price: "9500",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/Geisha_keejkz.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864927/Geisha_keejkz.png",
     category: "Can Food",
   },
-  // {
-  //   id: 85,
-  //   title: "HOT PEPPER",
-  //   description: "Peppery the way you like it.",
-  //   price: "610.99",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Can Food",
-  // },
-  // {
-  //   id: 86,
-  //   title: "HOT PEPPER",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Can Food",
-  // },
-  // {
-  //   id: 87,
-  //   title: "Mom's pride",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/mom_pride_xbeezd.png",
-  //   category: "Can Food",
-  // },
   {
     id: 88,
     title: "Mom's pride (1 roll)",
     description: "Peppery the way you like it.",
     price: "750.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/mom_pride_xbeezd.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/mom_pride_xbeezd.png",
     category: "Hot Pepper",
   },
   {
@@ -767,87 +482,17 @@ const data = [
     title: "Mr cheff (1 sachet)",
     description: "Queen of your food.",
     price: "200.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
     category: "Salt",
   },
-  // {
-  //   id: 90,
-  //   title: "Mr cheff (1 sachet)",
-  //   description: "Queen of your food.",
-  //   price: "150",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
-  //   category: "Salt",
-  // },
-  // {
-  //   id: 91,
-  //   title: "Mr cheff (1 sachet)",
-  //   description: "Queen of your food.",
-  //   price: "150",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864928/salt_sltdxf.png",
-  //   category: "Salt",
-  // },
-  // {
-  //   id: 92,
-  //   title: "THYME",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Salt",
-  // },
-  // {
-  //   id: 93,
-  //   title: "THYME",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Salt",
-  // },
-  // {
-  //   id: 94,
-  //   title: "Tiger",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Salt",
-  // },
-  // {
-  //   id: 95,
-  //   title: "Tiger",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Salt",
-  // },
-  // {
-  //   id: 96,
-  //   title: "Tiger",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Salt",
-  // },
-  // {
-  //   id: 97,
-  //   title: "Devon king's",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oil_ci3aye.png",
-  //   category: "Vegetable Oil",
-  // },
-  // {
-  //   id: 98,
-  //   title: "Devon king's",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864925/oil_ci3aye.png",
-  //   category: "Vegetable Oil",
-  // },
   {
     id: 99,
     title: "MyMy (1 pack)",
     description: "Every stick counts",
     price: "269.98",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420846/kukeat/IMG_4878_vc82by.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420846/kukeat/IMG_4878_vc82by.jpg",
     category: "Igniter",
   },
   {
@@ -855,7 +500,8 @@ const data = [
     title: "Lighter (1 piece)",
     description: "Light your way with ease",
     price: "249.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908405/new%20kukeat/Lighter_euwmps.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908405/new%20kukeat/Lighter_euwmps.png",
     category: "Igniter",
   },
   {
@@ -863,7 +509,8 @@ const data = [
     title: "White Garri (1 congo)",
     description: "The bond that joins us together",
     price: "1249.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908556/new%20kukeat/Garri_-_1_Congo_thxu5e.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908556/new%20kukeat/Garri_-_1_Congo_thxu5e.png",
     category: "Garri",
   },
   {
@@ -871,31 +518,17 @@ const data = [
     title: "White Garri (10congos)",
     description: "The bond that joins us together",
     price: "12499.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908552/new%20kukeat/Garri_-_10_Congo_wqrezv.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908552/new%20kukeat/Garri_-_10_Congo_wqrezv.png",
     category: "Garri",
   },
-  // {
-  //   id: 103,
-  //   title: "Yellow Garri",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Garri",
-  // },
-  // {
-  //   id: 104,
-  //   title: "Yellow Garri",
-  //   description: "Lorem ipsum dolor sit amet tetur mattis vel dhc kd.",
-  //   price: "800",
-  //   image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1700055138/m89yr73ost6kb6blvou4.png",
-  //   category: "Garri",
-  // },
   {
     id: 105,
     title: "Spicity; stew and jollof (1 roll)",
     description: "Spice your food",
     price: "999.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w8_i6npdn.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w8_i6npdn.jpg",
     category: "Spicies",
   },
 
@@ -904,7 +537,8 @@ const data = [
     title: "Groundnut Oil (1 bottle) 75cl",
     description: "Made for you",
     price: "1799.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w9_m5hfvy.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w9_m5hfvy.jpg",
     category: "Oil",
   },
 
@@ -913,7 +547,8 @@ const data = [
     title: "Big Eggs (1 crate)",
     description: "Nutrient Booster",
     price: "3999.79",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908553/new%20kukeat/Egg_nhejeu.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908553/new%20kukeat/Egg_nhejeu.png",
     category: "Egg",
   },
 
@@ -922,7 +557,8 @@ const data = [
     title: "Tiger thyme( 1 roll)",
     description: "Fragrant herb,savory flavor",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908452/new%20kukeat/Tiger_Thyme_z2lckg.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908452/new%20kukeat/Tiger_Thyme_z2lckg.png",
     category: "Spicies",
   },
 
@@ -931,7 +567,8 @@ const data = [
     title: "Spicity; Fried Rice (1 roll)",
     description: "Spice your food",
     price: "999.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w10_rtjpsl.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w10_rtjpsl.jpg",
     category: "Spicies",
   },
 
@@ -940,7 +577,8 @@ const data = [
     title: "Tiger Curry (1 roll)",
     description: "Savory flavor",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w4_xvc8gc.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w4_xvc8gc.jpg",
     category: "Spicies",
   },
 
@@ -949,7 +587,8 @@ const data = [
     title: "Golden penny Macaroni (pieces)",
     description: "Premium taste",
     price: "999.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w7_awmkg8.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w7_awmkg8.jpg",
     category: "Pasta",
   },
 
@@ -958,7 +597,8 @@ const data = [
     title: "Golden penny Spaghettini (pieces)",
     description: "Premium taste",
     price: "1099.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091995/new%20kukeat/w5_xm5dc6.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091995/new%20kukeat/w5_xm5dc6.jpg",
     category: "Pasta",
   },
 
@@ -967,7 +607,8 @@ const data = [
     title: "Foreign Rice (small seed)",
     description: "Small seeds, Big Flavour (1 congo)",
     price: "3459.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712182686/new%20kukeat/w1_oh5exu.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712182686/new%20kukeat/w1_oh5exu.jpg",
     category: "Rice",
   },
 
@@ -976,16 +617,17 @@ const data = [
     title: "Maggi (1 sachet)",
     description: "Timeless Culinary Essence (100 pieces)",
     price: "1499.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908406/new%20kukeat/Maggi_chicken_flavour_seasoning_reqtgm.png",
     category: "Seasoning Cube",
   },
-
   {
     id: 115,
     title: "Oriental (1/2 carton)",
     description: "Variety just for you.",
-    price: "5249.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
+    price: "4499.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
     category: "Noodles",
   },
 
@@ -993,8 +635,9 @@ const data = [
     id: 116,
     title: "Indomitable (1/2 carton)",
     description: "The fastest fast-food",
-    price: "5249.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
+    price: "4499.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420847/kukeat/IMG_4876_goutzf.jpg",
     category: "Noodles",
   },
 
@@ -1002,8 +645,9 @@ const data = [
     id: 117,
     title: "Onions Chicken (1/2 carton)",
     description: "Variety just for you.",
-    price: "5999.99",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
+    price: "5299.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711420842/kukeat/IMG_4881_fdkw9z.jpg",
     category: "Noodles",
   },
   {
@@ -1011,7 +655,8 @@ const data = [
     title: "Tiger Ginger Powder (1 roll)",
     description: "Just the spicy you need",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714084353/new%20kukeat/1_hfdmla.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714084353/new%20kukeat/1_hfdmla.jpg",
     category: "Spicies",
   },
   {
@@ -1019,9 +664,10 @@ const data = [
     title: "Tiger Garlic Powder (1 roll)",
     description: "Just the spicy you need",
     price: "774.97",
-    image:"https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714084353/new%20kukeat/2_bld22k.jpg",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1714084353/new%20kukeat/2_bld22k.jpg",
     category: "Spicies",
-  }
+  },
 ];
 
 module.exports = data;
