@@ -20,7 +20,8 @@ const cartItemSchema = new mongoose.Schema({
             itemName: String,
             quantity: Number,
             price: Number,
-            totalPrice: Number
+            totalPrice: Number,
+            imageUrl:String
         }
     ],
     serviceFee: Number,
