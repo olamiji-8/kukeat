@@ -1,4 +1,4 @@
-const CartItem = require('../models/CartItem');
+const CartItem = require('../../models/CartItem');
 const cloudinary = require('cloudinary').v2;
 
 // Configure Cloudinary
