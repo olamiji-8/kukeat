@@ -189,5 +189,14 @@ const data = [
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091993/new%20kukeat/w9_m5hfvy.jpg",
     category: "Extra",
   },
+  {
+    id: 25,
+    title: "Auntie B Pasta",
+    description: "Premium taste",
+    price: "809.99",
+    image:
+      "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1718179866/new%20kukeat/spag_ac1oil.jpg",
+    category: "Popular",
+  },
 ];
 module.exports = data;
