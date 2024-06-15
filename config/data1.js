@@ -66,7 +66,7 @@ const data = [
     id: 8,
     title: "White Garri (1 congo)",
     description: "The bond that joins us together",
-    price: "1249.99",
+    price: "1499.99",
     image:
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908556/new%20kukeat/Garri_-_1_Congo_thxu5e.png",
     category: "Garri",
@@ -130,7 +130,7 @@ const data = [
     id: 17,
     title: "Pretty lady Rice (1 congo)",
     description: "Made from the finest plantations",
-    price: "2799.99",
+    price: "2649.99",
     image:
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864926/Pretty_lady_rice_tg2mic.png",
     category: "Extra",

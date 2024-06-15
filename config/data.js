@@ -210,7 +210,7 @@ const data = [
     id: 43,
     title: "White beans (1 congo)",
     description: "Versatile Legumes",
-    price: "2199.99",
+    price: "2999.99",
     image:
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
     category: "Beans",
@@ -258,7 +258,7 @@ const data = [
     id: 51,
     title: "Africa King Rice (small seed)",
     description: "Small seeds, Big Flavour(1 congo)",
-    price: "2799.99",
+    price: "2649.99",
     image:
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
     category: "Rice",
@@ -278,7 +278,7 @@ const data = [
     id: 53,
     title: "Pretty lady Rice (1 congo)",
     description: "Made from the finest plantations",
-    price: "2799.99",
+    price: "2649.99",
     image:
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/African_rice_ooqmov.png",
     category: "Rice",
@@ -508,7 +508,7 @@ const data = [
     id: 101,
     title: "White Garri (1 congo)",
     description: "The bond that joins us together",
-    price: "1249.99",
+    price: "1499.99",
     image:
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908556/new%20kukeat/Garri_-_1_Congo_thxu5e.png",
     category: "Garri",
@@ -517,7 +517,7 @@ const data = [
     id: 102,
     title: "White Garri (10congos)",
     description: "The bond that joins us together",
-    price: "12499.99",
+    price: "14999.99",
     image:
       "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908552/new%20kukeat/Garri_-_10_Congo_wqrezv.png",
     category: "Garri",
