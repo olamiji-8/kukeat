@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../controller/itemController');
 const itemController = require('../controller/itemController');
-const cartItemController = require('../../controller/checkoutController');
+const cartItemController = require('../controller/cartItemController');
 
 
 // // User management
