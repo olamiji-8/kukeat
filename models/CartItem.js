@@ -14,18 +14,21 @@
 const mongoose = require('mongoose');
 
 const cartItemSchema = new mongoose.Schema({
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', index: true },
+
     items: [
         {
             itemName: String,
             quantity: Number,
             price: Number,
             totalPrice: Number,
-            imageUrl:String
+            // imageUrl:String
         }
     ],
     serviceFee: Number,
-    sumTotal: Number
+    sumTotal: Number,
+    createdAt: { type: Date, default: Date.now, index: true }
 });
 
 module.exports = mongoose.model('CartItem', cartItemSchema);
