@@ -58,3 +58,24 @@ exports.getCartItem = async (req, res) => {
         res.status(500).json({ error: 'Server error' });
     }
 };
+
+// Controller to delete a specific cart item
+exports.deleteCartItem = async (req, res) => {
+    const { cartItemId } = req.params;
+
+    try {
+        console.log('deleteCartItem function called with cartItemId:', cartItemId);
+        const cartItem = await CartItem.findByIdAndDelete(cartItemId);
+
+        if (!cartItem) {
+            console.log('Cart item not found for deletion');
+            return res.status(404).json({ error: 'Cart item not found' });
+        }
+
+        console.log('Cart item deleted:', cartItem);
+        res.json({ message: 'Cart item deleted successfully' });
+    } catch (error) {
+        console.error('Error deleting cart item:', error);
+        res.status(500).json({ error: 'Server error' });
+    }
+};
