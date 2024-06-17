@@ -1,12 +1,26 @@
-// routes/menuRoutes.js
 const express = require('express');
 const router = express.Router();
-
+const fs = require('fs');
 const path = require('path');
-const menuData = require('../config/data');
-const storeData= require("../config/data1");
-const categoriesData= require("../config/categories");
-const blogData = require("../config/blog")
+
+const menuDataPath = path.join(__dirname, '../config/data.json');
+const storeDataPath = path.join(__dirname, '../config/data1.json');
+
+let menuData = require('../config/data.json');
+let storeData = require("../config/data1.json");
+const categoriesData = require("../config/categories");
+const blogData = require("../config/blog");
+
+// Utility function to write data to a file
+function writeDataToFile(filePath, data) {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
+}
+
+// Reload data from file
+function reloadData(filePath) {
+  delete require.cache[require.resolve(filePath)];
+  return require(filePath);
+}
 
 // GET all menu items
 router.get('/menu', (req, res) => {
@@ -29,9 +43,6 @@ router.get('/menu/category/:category', (req, res) => {
   }
 });
 
-
-
-
 // GET a specific menu item by category and ID
 router.get('/menu/category/:categoryName/:id', (req, res) => {
   const categoryName = req.params.categoryName.toLowerCase();
@@ -48,8 +59,6 @@ router.get('/menu/category/:categoryName/:id', (req, res) => {
   }
 });
 
-
-
 // GET a specific menu item by ID
 router.get('/menu/:id', (req, res) => {
   const itemId = parseInt(req.params.id);
@@ -63,44 +72,54 @@ router.get('/menu/:id', (req, res) => {
   }
 });
 
+// CREATE a new menu item
+router.post('/menu', (req, res) => {
+  const newItem = req.body;
+  newItem.id = menuData.length ? Math.max(...menuData.map(item => item.id)) + 1 : 1; // Generate new ID
+  menuData.push(newItem);
+  writeDataToFile(menuDataPath, menuData);
+  menuData = reloadData(menuDataPath);
+  res.status(201).json(newItem);
+});
 
-// GET all categories with associated images
-router.get('/categories', (req, res) => {
-  const categoriesMap = new Map();
+// UPDATE a menu item
+router.put('/menu/:id', (req, res) => {
+  const itemId = parseInt(req.params.id);
+  const itemIndex = menuData.findIndex(item => item.id === itemId);
 
-  // Group menu items by category
-  menuData.forEach(item => {
-    if (!categoriesMap.has(item.category)) {
-      categoriesMap.set(item.category, []);
-    }
-    categoriesMap.get(item.category).push({
-      id: item.id,
-      image: item.image
-    });
-  });
-
-  // Format categories with their associated images
-  const categoriesWithImages = [];
-  categoriesMap.forEach((images, category) => {
-    categoriesWithImages.push({
-      category,
-      images
-    });
-  });
-
-  if (categoriesWithImages.length > 0) {
-    res.json(categoriesWithImages);
+  if (itemIndex !== -1) {
+    const updatedItem = { ...menuData[itemIndex], ...req.body };
+    menuData[itemIndex] = updatedItem;
+    writeDataToFile(menuDataPath, menuData);
+    menuData = reloadData(menuDataPath);
+    res.json(updatedItem);
   } else {
-    res.status(404).json({ error: 'No categories found' });
+    res.status(404).json({ error: 'Item not found' });
   }
 });
 
+// DELETE a menu item
+router.delete('/menu/:id', (req, res) => {
+  const itemId = parseInt(req.params.id);
+  const itemIndex = menuData.findIndex(item => item.id === itemId);
 
-// Add more routes as needed
-router.get("/store", (req,res)=>{
+  if (itemIndex !== -1) {
+    menuData.splice(itemIndex, 1);
+    writeDataToFile(menuDataPath, menuData);
+    menuData = reloadData(menuDataPath);
+    res.status(204).end();
+  } else {
+    res.status(404).json({ error: 'Item not found' });
+  }
+});
+
+// Similar CRUD operations for store items
+
+// GET all store items
+router.get('/store', (req, res) => {
   console.log('GET request for all store items');
-  res.json(storeData)
-})
+  res.json(storeData);
+});
 
 // GET a specific store item by ID
 router.get('/store/:id', (req, res) => {
@@ -115,6 +134,46 @@ router.get('/store/:id', (req, res) => {
   }
 });
 
+// CREATE a new store item
+router.post('/store', (req, res) => {
+  const newItem = req.body;
+  newItem.id = storeData.length ? Math.max(...storeData.map(item => item.id)) + 1 : 1; // Generate new ID
+  storeData.push(newItem);
+  writeDataToFile(storeDataPath, storeData);
+  storeData = reloadData(storeDataPath);
+  res.status(201).json(newItem);
+});
+
+// UPDATE a store item
+router.put('/store/:id', (req, res) => {
+  const itemId = parseInt(req.params.id);
+  const itemIndex = storeData.findIndex(item => item.id === itemId);
+
+  if (itemIndex !== -1) {
+    const updatedItem = { ...storeData[itemIndex], ...req.body };
+    storeData[itemIndex] = updatedItem;
+    writeDataToFile(storeDataPath, storeData);
+    storeData = reloadData(storeDataPath);
+    res.json(updatedItem);
+  } else {
+    res.status(404).json({ error: 'Item not found' });
+  }
+});
+
+// DELETE a store item
+router.delete('/store/:id', (req, res) => {
+  const itemId = parseInt(req.params.id);
+  const itemIndex = storeData.findIndex(item => item.id === itemId);
+
+  if (itemIndex !== -1) {
+    storeData.splice(itemIndex, 1);
+    writeDataToFile(storeDataPath, storeData);
+    storeData = reloadData(storeDataPath);
+    res.status(204).end();
+  } else {
+    res.status(404).json({ error: 'Item not found' });
+  }
+});
 
 // Order Categories routes 
 router.get("/order", (req,res)=>{
@@ -135,8 +194,6 @@ router.get('/order/:id', (req, res) => {
   }
 });
 
-
-
 // GET blog item
 router.get('/blog', (req, res) => {
   console.log('GET request for blog items');
@@ -144,6 +201,3 @@ router.get('/blog', (req, res) => {
 });
 
 module.exports = router;
-
-
-
