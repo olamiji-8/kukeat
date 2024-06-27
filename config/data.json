@@ -131,7 +131,7 @@
     "id": 34,
     "title": "King’s oil (25 ltrs)",
     "description": "Culinary Excellence",
-    "price": "58000",
+    "price": "64999.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091994/new%20kukeat/w3_azwqtt.jpg",
     "category": "Oil"
   },
@@ -139,7 +139,7 @@
     "id": 35,
     "title": "Palm Oil (1 bottle) 75cl",
     "description": "Made from the finest oil plantations",
-    "price": "1599.99",
+    "price": "999.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707901641/Palmoil_ty9xwm.png",
     "category": "Oil"
   },
@@ -147,7 +147,7 @@
     "id": 36,
     "title": "Palm Oil (5 litres)",
     "description": "Made from the finest oil plantations",
-    "price": "10600",
+    "price": "5799.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712091995/new%20kukeat/w2_zsvxxy.jpg",
     "category": "Oil"
   },
@@ -163,7 +163,7 @@
     "id": 41,
     "title": "Honey beans (Ewa Oloyin)",
     "description": "Rich Legumes (1 congo)",
-    "price": "3199.99",
+    "price": "4999.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1707864924/oloyin_beans_oxtgor.png",
     "category": "Beans"
   },
@@ -179,7 +179,7 @@
     "id": 43,
     "title": "White beans (1 congo)",
     "description": "Versatile Legumes",
-    "price": "2999.99",
+    "price": "3199.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1712098706/new%20kukeat/w12_hw22ek.jpg",
     "category": "Beans"
   },
@@ -251,7 +251,7 @@
     "id": 55,
     "title": "Oriental (1 carton)",
     "description": "Variety just for you.",
-    "price": "8999.99",
+    "price": "8499.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908393/new%20kukeat/oriental_habecp.jpg",
     "category": "Noodles"
   },
@@ -363,7 +363,7 @@
     "id": 80,
     "title": "Knorr (1 sachet)",
     "description": "Makes your food taste 2x better (45 pieces)",
-    "price": "1699.99",
+    "price": "1899.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908534/new%20kukeat/Knorr_45_pieces_jpmxek.png",
     "category": "Seasoning Cube"
   },
@@ -467,7 +467,7 @@
     "id": 107,
     "title": "Big Eggs (1 crate)",
     "description": "Nutrient Booster",
-    "price": "3999.79",
+    "price": "4499.99",
     "image": "https://res.cloudinary.com/dxd1j0yzt/image/upload/v1711908553/new%20kukeat/Egg_nhejeu.png",
     "category": "Egg"
   },
